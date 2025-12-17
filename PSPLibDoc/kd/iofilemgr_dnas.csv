@@ -1,0 +1,12 @@
+sceIoFilemgrDNAS_driver,fun,0144AFDA,sceIoLseekDNAS,matching
+sceIoFilemgrDNAS_driver,fun,4B4AAA29,sceIoEndDNAS,matching
+sceIoFilemgrDNAS_driver,fun,79A425A4,sceIoInitDNAS,matching
+sceIoFilemgrDNAS_driver,fun,8E56CAA1,sceIoReadDNAS,matching
+sceIoFilemgrDNAS_driver,fun,9F645A9C,sceIoCloseDNAS,matching
+sceIoFilemgrDNAS_driver,fun,AA46A25E,sceIoFilemgrDNAS_driver_AA46A25E,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,fun,ADF12745,module_reboot_phase,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

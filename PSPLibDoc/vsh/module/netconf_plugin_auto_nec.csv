@@ -1,0 +1,9 @@
+sceVshNetconfRaku,fun,42C68F08,necApConfigStart,matching
+sceVshNetconfRaku,fun,70A22EF2,sceVshNetconfRaku_70A22EF2,
+sceVshNetconfRaku,fun,B29274F1,necApConfigEnd,matching
+sceVshNetconfRaku,fun,D030086D,necApConfigGetResult,matching
+sceVshNetconfRaku,fun,F3AF9DD1,necApConfigGetState,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

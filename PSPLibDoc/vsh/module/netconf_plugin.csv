@@ -1,0 +1,11 @@
+sceVshNetconf,fun,92136BE5,_Z18netconf_init_apcnfv,matching
+sceVshNetconf,fun,AA073A3D,_Z23netconf_set_apcnf_entryiP23SceUtilityNetParamEntry,matching
+sceVshNetconf,fun,B4006E84,_Z19netconf_write_apcnfi,matching
+sceVshNetconf,fun,BEAC6DF3,_Z28netconf_init_temporary_apcnfv,matching
+sceVshNetconf,fun,C721AEF6,_Z29netconf_write_temporary_apcnfv,matching
+sceVshNetconf,fun,E5C98505,_Z33netconf_set_temporary_apcnf_entryiP23SceUtilityNetParamEntry,matching
+sceVshNetconf,fun,ED56BC38,_Z29netconf_clear_temporary_apcnfv,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

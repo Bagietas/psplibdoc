@@ -1,0 +1,13 @@
+sceMlnBridge_msapp,fun,3811BA77,sceMlnBridge_msapp_3811BA77,
+sceMlnBridge_msapp,fun,494B3B0B,sceMlnBridge_msapp_494B3B0B,
+sceMlnBridge_msapp,fun,D527DEB0,sceMlnBridge_msapp_D527DEB0,
+sceMlnBridge_msapp,fun,F02B9478,sceMlnBridge_msapp_F02B9478,
+sceMlnBridge_msapp,fun,0398DEFF,sceMlnBridge_msapp_0398DEFF,
+sceMlnBridge_msapp,fun,7AD66017,sceMlnBridge_msapp_7AD66017,
+sceMlnBridge_msapp,fun,CC6037D7,sceMlnBridge_msapp_CC6037D7,
+sceMlnBridge_msapp_driver,fun,0ED6A564,sceMlnBridge_msapp_driver_0ED6A564,
+sceMlnBridge_msapp_driver,fun,C41F1B67,sceMlnBridge_msapp_driver_C41F1B67,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

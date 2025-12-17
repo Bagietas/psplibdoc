@@ -1,0 +1,17 @@
+memlmd,fun,1079F5BF,memlmd_1079F5BF,
+memlmd,fun,129579FE,memlmd_129579FE,
+memlmd,fun,1AA5F8EF,memlmd_1AA5F8EF,
+memlmd,fun,4569AA58,memlmd_4569AA58,
+memlmd,fun,555A06BC,memlmd_555A06BC,
+memlmd,fun,9DE7BE14,memlmd_9DE7BE14,
+memlmd,fun,9DEAD5DD,memlmd_9DEAD5DD,
+memlmd,fun,A8725610,memlmd_A8725610,
+memlmd,fun,D265A700,memlmd_D265A700,
+semaphore,fun,00EEC06A,sceUtilsBufferCopy,matching
+semaphore,fun,4C537C72,sceUtilsBufferCopyWithRange,matching
+semaphore,fun,77E97079,sceUtilsBufferCopyByPollingWithRange,matching
+semaphore,fun,8EEB7BF2,sceUtilsBufferCopyByPolling,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

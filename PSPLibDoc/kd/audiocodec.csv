@@ -1,0 +1,13 @@
+sceAudiocodec,fun,29681260,sceAudiocodecReleaseEDRAM,matching
+sceAudiocodec,fun,3A20A200,sceAudiocodecGetEDRAM,matching
+sceAudiocodec,fun,59176A0F,sceAudiocodecAlcExtendParameter,matching
+sceAudiocodec,fun,5B37EB1D,sceAudiocodecInit,matching
+sceAudiocodec,fun,6CD2A861,sceAudiocodec_6CD2A861,
+sceAudiocodec,fun,70A703F8,sceAudiocodecDecode,matching
+sceAudiocodec,fun,8ACA11D5,sceAudiocodecGetInfo,matching
+sceAudiocodec,fun,9D3F790C,sceAudiocodecCheckNeedMem,matching
+sceAudiocodec,fun,3DD7EE1A,sceAudiocodec_3DD7EE1A,
+sceAudiocodec_driver,fun,62518B7E,sceAudiocodecStartEntry,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching

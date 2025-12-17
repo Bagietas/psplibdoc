@@ -1,0 +1,17 @@
+InitForKernel,fun,1D3256BA,sceKernelRegisterChunk,matching
+InitForKernel,fun,2C6E9FE9,sceKernelGetChunk,matching
+InitForKernel,fun,7A2333AD,sceKernelInitApitype,matching
+InitForKernel,fun,A6E71B93,sceKernelInitFileName,matching
+InitForKernel,fun,CE88E870,sceKernelReleaseChunk,matching
+InitForKernel,fun,27932388,sceKernelBootFrom,matching
+InitForKernel,fun,9F9AE99C,sceKernelSetInitCallback,matching
+InitForKernel,fun,7233B5BC,sceKernelApplicationType,matching
+InitForKernel,fun,33D30F49,sceKernelShowIntrHandlerInfo,matching
+InitForKernel,fun,C4F1BA33,sceKernelStartIntrLogging,matching
+InitForKernel,fun,FD0F25AD,sceKernelShowIntrMaskTime,matching
+InitForKernel,fun,48348387,InitForKernel_48348387,
+InitForKernel,fun,05361DEE,InitForKernel_05361DEE,
+syslib,fun,D3744BE0,module_bootstart,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

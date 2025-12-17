@@ -1,0 +1,16 @@
+sceLibUpdateDL,fun,4F49C9C1,sceUpdateDownloadAbort,matching
+sceLibUpdateDL,fun,88FF3935,sceUpdateDownloadSetDestCode,matching
+sceLibUpdateDL,fun,B5DB018D,sceUpdateDownloadSetServerRegion,matching
+sceLibUpdateDL,fun,C1AF1076,sceUpdateDownloadSetVersion,matching
+sceLibUpdateDL,fun,D6A09757,sceUpdateDownloadEnd,matching
+sceLibUpdateDL,fun,F6690A9A,sceUpdateDownloadInitEx,matching
+sceLibUpdateDL,fun,F7E66CB4,sceUpdateDownloadSetUrl,matching
+sceLibUpdateDL,fun,FA9AA797,sceUpdateDownloadReadData,matching
+sceLibUpdateDL,fun,FC1AB540,sceUpdateDownloadInit,matching
+sceLibUpdateDL,fun,FD675E8D,sceUpdateDownloadConnectServer,matching
+sceLibUpdateDL,fun,34243B86,sceLibUpdateDL_34243B86,
+sceLibUpdateDL,fun,36D8F34B,sceLibUpdateDL_36D8F34B,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

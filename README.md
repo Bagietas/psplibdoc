@@ -5,7 +5,7 @@ Page with the current NID status for each library can be found [here](https://ps
  
 ## Usage
 ### Prerequisites
-psp_libdoc.py and psp_print_libdoc.py require python3 with lxml module.
+psp_libdoc.py requires python3 with lxml module.
 
 ### Common psp_libdoc operations
  - Loading source files
@@ -43,24 +43,6 @@ psp_libdoc.py and psp_print_libdoc.py require python3 with lxml module.
 
  - Export all known function names from all loaded sources
     - psp_libdoc.py *sources* -k known_function_names.txt
-<br>
-
-### Common psp_print_libdoc operations
- - Print all exports of a given PRX module
-    - psp_print_libdoc.py -d *directory* -e *module*
-    - Example: psp_print_libdoc.py -d PSPLibDoc/1.50/ -e sysmem
-
- - Print all imports of a given PRX module
-    - psp_print_libdoc.py -d *directory* -i *module*
-    - Example: psp_print_libdoc.py -d PSPLibDoc/1.50/ -i threadman
-
- - Print all PRX modules exporting a given library
-    - psp_print_libdoc.py -d *directory* -l *library*
-    - Example: psp_print_libdoc.py -d PSPLibDoc/1.50/ -l SysMemForKernel
-
- - Print all PRX modules importing a given library
-    - psp_print_libdoc.py -d *directory* -m *library*
-    - Example: psp_print_libdoc.py -d PSPLibDoc/1.50/ -m LoadCoreForKernel
 <br>
 
 ### Misc tools

@@ -1,0 +1,13 @@
+LoadExecForKernel,fun,53719868,LoadExecForKernel_53719868,
+LoadExecForKernel,fun,AA2029EC,LoadExecForKernel_AA2029EC,
+LoadExecForKernel,fun,CAFC9CB3,LoadExecForKernel_CAFC9CB3,
+LoadExecForUser,fun,05572A5F,sceKernelExitGame,matching
+LoadExecForUser,fun,2AC9954B,sceKernelExitGameWithStatus,matching
+LoadExecForUser,fun,362A956B,LoadExecForUser_362A956B,
+LoadExecForUser,fun,4AC57943,sceKernelRegisterExitCallback,matching
+LoadExecForUser,fun,8ADA38D3,LoadExecForUser_8ADA38D3,
+LoadExecForUser,fun,BD2F1094,sceKernelLoadExec,matching
+LoadExecForUser,fun,D1FB50DC,LoadExecForUser_D1FB50DC,
+syslib,fun,D3744BE0,module_bootstart,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

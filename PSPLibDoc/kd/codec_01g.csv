@@ -1,0 +1,9 @@
+sceCodec_driver,fun,02133959,sceCodecStopEntry,matching
+sceCodec_driver,fun,261C6EE8,sceCodecSetOutputVolume,matching
+sceCodec_driver,fun,359C2B9F,sceCodecOutputDisable,matching
+sceCodec_driver,fun,856E7487,sceCodecOutputEnable,matching
+sceCodec_driver,fun,BD8E0977,sceCodecInitEntry,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

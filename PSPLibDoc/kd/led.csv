@@ -1,0 +1,9 @@
+sceLed_driver,fun,A13B3D38,sceLedResume,matching
+sceLed_driver,fun,A8542C48,sceLedEnd,matching
+sceLed_driver,fun,B0B6A883,sceLedInit,matching
+sceLed_driver,fun,DE91D3A4,sceLedSuspend,matching
+sceLed_driver,fun,EA24BE03,sceLedSetMode,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
 import argparse
+import csv
 import hashlib
 import itertools
 import os
@@ -319,6 +320,11 @@ def exportPSPLibdocModules(nidEntries, outFolder):
 		outfile = outFolder + "/" + key.split('.')[0] + ".xml"
 		exportPSPLibdocCombined(prxDict[key], outfile)
 
+def exportCSV(nidEntries):
+    writer = csv.writer(sys.stdout)
+    for entry in nidEntries:
+        writer.writerow([entry.libraryName, entry.nidtype, entry.nid, entry.name, entry.source])
+
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 
@@ -386,6 +392,11 @@ if __name__ == '__main__':
 						type=str,
 						help='Extract only the NIDs from a given firmware version')
 
+	parser.add_argument('-C', '--csv',
+	                    required=False,
+	                    action='store_true',
+	                    help='Export to CSV to stdout')
+
 	nidEntries = []
 	args = parser.parse_args(sys.argv[1:])
 
@@ -430,7 +441,6 @@ if __name__ == '__main__':
 	if(args.writeLibdocSplit):
 		exportPSPLibdocModules(nidEntries, args.writeLibdocSplit)
 
-
-
-
+	if(args.csv):
+	    exportCSV(nidEntries)
 

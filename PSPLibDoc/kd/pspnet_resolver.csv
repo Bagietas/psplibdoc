@@ -1,0 +1,15 @@
+sceNetResolver,fun,224C5F44,sceNetResolverStartNtoA,matching
+sceNetResolver,fun,244172AF,sceNetResolverCreate,matching
+sceNetResolver,fun,6138194A,sceNetResolverTerm,matching
+sceNetResolver,fun,629E2FB7,sceNetResolverStartAtoN,matching
+sceNetResolver,fun,808F6063,sceNetResolverStop,matching
+sceNetResolver,fun,94523E09,sceNetResolverDelete,matching
+sceNetResolver,fun,F3370E61,sceNetResolverInit,matching
+sceNetResolver,fun,12748EB9,sceNetResolverWaitAsync,matching
+sceNetResolver,fun,14C17EF9,sceNetResolverStartNtoAAsync,matching
+sceNetResolver,fun,4EE99358,sceNetResolverPollAsync,matching
+sceNetResolver,fun,AAC09184,sceNetResolverStartAtoNAsync,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

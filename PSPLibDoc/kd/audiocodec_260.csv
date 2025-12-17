@@ -1,0 +1,16 @@
+sceAudioc,fun,29681260,sceAudiocodecReleaseEDRAM,matching
+sceAudioc,fun,3A20A200,sceAudiocodecGetEDRAM,matching
+sceAudioc,fun,3DD7EE1A,sceAudioc_3DD7EE1A,
+sceAudioc,fun,59176A0F,sceAudiocodecAlcExtendParameter,matching
+sceAudioc,fun,5B37EB1D,sceAudiocodecInit,matching
+sceAudioc,fun,70A703F8,sceAudiocodecDecode,matching
+sceAudioc,fun,8ACA11D5,sceAudiocodecGetInfo,matching
+sceAudioc,fun,9D3F790C,sceAudiocodecCheckNeedMem,matching
+sceAudiocodec,fun,29681260,sceAudiocodecReleaseEDRAM,matching
+sceAudiocodec,fun,3A20A200,sceAudiocodecGetEDRAM,matching
+sceAudiocodec,fun,3DD7EE1A,sceAudiocodec_3DD7EE1A,
+sceAudiocodec,fun,59176A0F,sceAudiocodecAlcExtendParameter,matching
+sceAudiocodec,fun,5B37EB1D,sceAudiocodecInit,matching
+sceAudiocodec,fun,70A703F8,sceAudiocodecDecode,matching
+sceAudiocodec,fun,8ACA11D5,sceAudiocodecGetInfo,matching
+sceAudiocodec,fun,9D3F790C,sceAudiocodecCheckNeedMem,matching

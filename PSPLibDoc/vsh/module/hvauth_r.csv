@@ -1,0 +1,3 @@
+sceHVAuth,fun,5E335DF6,sceHVAuthOpen,matching
+sceHVAuth,fun,816A5F92,sceHVAuthAuth,matching
+sceHVAuth,fun,9DB7DE7C,sceHVAuthClose,matching

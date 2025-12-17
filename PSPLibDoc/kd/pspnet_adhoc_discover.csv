@@ -1,0 +1,6 @@
+sceNetAdhocDiscover,fun,52DE1B97,sceNetAdhocDiscoverUpdate,matching
+sceNetAdhocDiscover,fun,941B3877,sceNetAdhocDiscoverInitStart,matching
+sceNetAdhocDiscover,fun,944DDBC6,sceNetAdhocDiscoverGetStatus,matching
+sceNetAdhocDiscover,fun,A2246614,sceNetAdhocDiscoverTerm,matching
+sceNetAdhocDiscover,fun,A423A21B,sceNetAdhocDiscoverRequestSuspend,matching
+sceNetAdhocDiscover,fun,F7D13214,sceNetAdhocDiscoverStop,matching

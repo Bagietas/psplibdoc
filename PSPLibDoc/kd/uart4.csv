@@ -1,0 +1,12 @@
+Uart4ForKernel,fun,2518C2F3,sceKernelUart4SendBytesFix,matching
+Uart4ForKernel,fun,2FD96F62,sceKernelUart4ReceiveBytesFix,matching
+Uart4ForKernel,fun,69BCBEF1,sceKernelUart4SendCharFix,matching
+Uart4ForKernel,fun,A68555F7,sceKernelUart4SetBps,matching
+Uart4ForKernel,fun,C0BE3133,sceKernelUart4SendChar,matching
+Uart4ForKernel,fun,C703109F,sceKernelUart4PostChar,matching
+Uart4ForKernel,fun,D00E3D06,sceKernelUart4Init,matching
+Uart4ForKernel,fun,D91079E3,sceKernelUart4SendBytes,matching
+Uart4ForKernel,fun,393E7F51,sceKernelUartStart,matching
+Uart4ForKernel,fun,4E9CBD00,sceKernelUart4End,matching
+syslib,fun,D3744BE0,module_bootstart,matching
+syslib,var,F01D73A7,module_info,matching

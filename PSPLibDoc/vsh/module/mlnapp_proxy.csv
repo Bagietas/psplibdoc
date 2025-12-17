@@ -1,0 +1,16 @@
+mlnapp_proxy,fun,00B8168B,mlnapp_proxy_00B8168B,
+mlnapp_proxy,fun,274BEDC4,mlnapp_proxy_274BEDC4,
+mlnapp_proxy,fun,451258F2,mlnapp_proxy_451258F2,
+mlnapp_proxy,fun,5BF17CB7,mlnapp_proxy_5BF17CB7,
+mlnapp_proxy,fun,6636608E,mlnapp_proxy_6636608E,
+mlnapp_proxy,fun,792A9452,mlnapp_proxy_792A9452,
+mlnapp_proxy,fun,8D2745FE,mlnapp_proxy_8D2745FE,
+mlnapp_proxy,fun,AA348495,mlnapp_proxy_AA348495,
+mlnapp_proxy,fun,CCFCEBAC,mlnapp_proxy_CCFCEBAC,
+mlnapp_proxy,fun,FF9A2C6E,mlnapp_proxy_FF9A2C6E,
+mlnapp_proxy,fun,1E3BEA50,mlnapp_proxy_1E3BEA50,
+mlnapp_proxy_hwd,fun,D4613071,mlnapp_proxy_hwd_D4613071,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

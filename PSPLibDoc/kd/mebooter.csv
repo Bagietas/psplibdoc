@@ -1,0 +1,3 @@
+sceMeBooter_driver,fun,3BCB751E,me_init,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,var,F01D73A7,module_info,matching

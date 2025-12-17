@@ -1,0 +1,10 @@
+sceMcctrl,fun,1EDFD6BB,sceMcctrl_1EDFD6BB,
+sceMcctrl,fun,3EF531DB,sceMcctrl_3EF531DB,
+sceMcctrl,fun,61550814,sceMcctrl_61550814,
+sceMcctrl,fun,7CAC25B2,sceMcctrl_7CAC25B2,
+sceMcctrl,fun,877CD3A5,sceMcctrl_877CD3A5,
+sceMcctrl,fun,9618EE57,sceMcctrl_9618EE57,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

@@ -1,0 +1,8 @@
+sceOnesegLnch,fun,734C315F,sceOnesegLnch_734C315F,
+sceOnesegLnch,fun,9A609CED,sceOnesegLnch_9A609CED,
+sceOnesegLnch,fun,B3F1FB46,sceOnesegLnch_B3F1FB46,
+sceOnesegLnch,fun,E766B172,sceOnesegLnch_E766B172,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

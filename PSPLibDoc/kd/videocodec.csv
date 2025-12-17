@@ -1,0 +1,16 @@
+sceVideocodec,fun,17099F0A,sceVideocodecInit,matching
+sceVideocodec,fun,26927D19,sceVideocodecGetVersion,matching
+sceVideocodec,fun,2D31F5B1,sceVideocodecGetEDRAM,matching
+sceVideocodec,fun,2F385E7F,sceVideocodecScanHeader,matching
+sceVideocodec,fun,307E6E1C,sceVideocodecDelete,matching
+sceVideocodec,fun,4F160BF4,sceVideocodecReleaseEDRAM,matching
+sceVideocodec,fun,745A7B7A,sceVideocodecSetMemory,matching
+sceVideocodec,fun,A2F0564E,sceVideocodecStop,matching
+sceVideocodec,fun,C01EC829,sceVideocodecOpen,matching
+sceVideocodec,fun,DBA273FA,sceVideocodecDecode,matching
+sceVideocodec,fun,627B7D42,sceVideocodecGetSEI,matching
+sceVideocodec_driver,fun,E76D65FE,sceVideocodecStartEntry,matching
+sceVideocodec_driver,fun,CB3312D1,sceVideocodecEndEntry,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching

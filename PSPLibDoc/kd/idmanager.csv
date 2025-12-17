@@ -1,0 +1,5 @@
+sceIdMgr_driver,fun,F464F91C,sceIdMgrRegisterCallback,matching
+sceIdMgr_driver,fun,4D0EDB31,sceIdMgr_driver_4D0EDB31,
+syslib,fun,D632ACDB,module_start,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

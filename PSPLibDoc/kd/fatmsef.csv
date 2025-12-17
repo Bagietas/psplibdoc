@@ -1,0 +1,7 @@
+sceFatfs_driver,fun,9374203F,sceFatfs_driver_9374203F,
+sceFatfs_driver,fun,A41ABC76,sceFatfs_driver_A41ABC76,
+sceFatfs_driver,fun,F44D9DF2,sceFatfs_driver_F44D9DF2,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,ADF12745,module_reboot_phase,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

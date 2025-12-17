@@ -1,0 +1,13 @@
+sceUsbstor,fun,60066CFE,sceUsbstorGetStatus,matching
+sceUsbstor_driver,fun,60066CFE,sceUsbstorGetStatus,matching
+sceUsbstor_internal,fun,2CAFEFF1,sceUsbstor_internal_2CAFEFF1,
+sceUsbstor_internal,fun,489E6BF1,sceUsbstor_internal_489E6BF1,
+sceUsbstor_internal,fun,50F99EAD,sceUsbstorGetString,matching
+sceUsbstor_internal,fun,DC1A5833,sceUsbstorSendData,matching
+sceUsbstor_internal,fun,FC4D0080,sceUsbstorRecvData,matching
+sceUsbstor_internal,fun,EC57ED1D,sceUsbstorGetSubClass,matching
+sceUsbstor_internal,fun,F03FCB48,sceUsbstorSetSubClass,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

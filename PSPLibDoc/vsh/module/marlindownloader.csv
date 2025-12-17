@@ -1,0 +1,13 @@
+marlindownloader,fun,1F7676D3,marlindownloader_1F7676D3,
+marlindownloader,fun,595C7E53,marlindownloader_595C7E53,
+marlindownloader,fun,598D3F5A,marlindownloader_598D3F5A,
+marlindownloader,fun,6BA908AF,marlindownloader_6BA908AF,
+marlindownloader,fun,A95E8644,marlindownloader_A95E8644,
+marlindownloader,fun,AB9F172C,marlindownloader_AB9F172C,
+marlindownloader,fun,AFDC403F,marlindownloader_AFDC403F,
+marlindownloader,fun,B263A87C,marlindownloader_B263A87C,
+marlindownloader,fun,C8CBC64F,marlindownloader_C8CBC64F,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

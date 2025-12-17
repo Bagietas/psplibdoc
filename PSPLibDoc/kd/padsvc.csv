@@ -1,0 +1,14 @@
+scePadSvc_driver,fun,16A3410F,scePadSvc_driver_16A3410F,
+scePadSvc_driver,fun,4D8068F2,scePadSvc_driver_4D8068F2,
+scePadSvc_driver,fun,7846A1BF,scePadSvc_driver_7846A1BF,
+scePadSvc_driver,fun,7A63810D,scePadSvc_driver_7A63810D,
+scePadSvc_driver,fun,897EC2BB,scePadSvc_driver_897EC2BB,
+scePadSvc_driver,fun,A42FE6BF,scePadSvc_driver_A42FE6BF,
+scePadSvc_driver,fun,B2064277,scePadSvc_driver_B2064277,
+scePadSvc_driver,fun,CE2078F5,scePadSvc_driver_CE2078F5,
+scePadSvc_driver,fun,FB1AAD32,scePadSvc_driver_FB1AAD32,
+scePadSvc_driver,fun,FDB61C94,scePadSvc_driver_FDB61C94,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

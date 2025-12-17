@@ -1,0 +1,13 @@
+scePwm_driver,fun,1FC555BE,scePwmStop,matching
+scePwm_driver,fun,526F94FC,scePwmSuspend,matching
+scePwm_driver,fun,68BA9CC1,scePwmInit,matching
+scePwm_driver,fun,850ED3D3,scePwmStart,matching
+scePwm_driver,fun,93F30DAC,scePwmIsLoading,matching
+scePwm_driver,fun,AB6D2E36,scePwmChangeDuty,matching
+scePwm_driver,fun,B3169427,scePwmEnd,matching
+scePwm_driver,fun,E449F656,scePwmResume,matching
+scePwm_driver,fun,F624C1A0,scePwmReferDuty,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

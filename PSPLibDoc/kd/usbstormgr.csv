@@ -1,0 +1,16 @@
+sceUsbstormln,fun,1F4AC19C,sceUsbstormlnGetCommand,matching
+sceUsbstormln,fun,25B6F372,sceUsbstormlnUnregisterBuffer,matching
+sceUsbstormln,fun,382898DE,sceUsbstormlnRegisterBuffer,matching
+sceUsbstormln,fun,5821060D,sceUsbstormlnNotifyResponse,matching
+sceUsbstormln,fun,DEC0FE8C,sceUsbstormlnWaitStatus,matching
+sceUsbstormln,fun,E11DEFDF,sceUsbstormlnCancelWaitStatus,matching
+sceUsbstormln_driver,fun,30440A8C,sceUsbstormln_driver_30440A8C,
+sceUsbstormln_driver,fun,504E8C75,sceUsbstormln_driver_504E8C75,
+sceUsbstormln_driver,fun,5E01134C,sceUsbstormln_driver_5E01134C,
+sceUsbstormln_driver,fun,90BBBDB9,sceUsbstormln_driver_90BBBDB9,
+sceUsbstormln_driver,fun,99D4D1B5,sceUsbstormln_driver_99D4D1B5,
+sceUsbstormln_driver,fun,D07E1D8A,sceUsbstormln_driver_D07E1D8A,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

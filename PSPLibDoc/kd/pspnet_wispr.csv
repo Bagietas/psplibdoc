@@ -1,0 +1,5 @@
+sceNetWispr,fun,19235F8C,sceNetWisprStart,matching
+sceNetWispr,fun,757BDC9F,sceNetWisprStop,matching
+sceNetWispr,fun,BC05EC73,sceNetWisprTerm,matching
+sceNetWispr,fun,BD745B6D,sceNetWisprInit,matching
+sceNetWispr,fun,C856AAAC,sceNetWisprLogoffStart,matching

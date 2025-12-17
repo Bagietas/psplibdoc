@@ -1,0 +1,10 @@
+sceSemawm,fun,4C268535,sceSemawm_4C268535,
+sceSemawm,fun,51E51869,sceSemawm_51E51869,
+sceSemawm,fun,5B6C204D,sceSemawm_5B6C204D,
+sceSemawm,fun,6FEA0A45,sceSemawm_6FEA0A45,
+sceSemawm,fun,77C42467,sceSemawm_77C42467,
+sceSemawm,fun,4E409722,sceSemawm_4E409722,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

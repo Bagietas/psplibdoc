@@ -1,0 +1,9 @@
+scePEQ,fun,ED13C3B5,scePeqProc,matching
+scePEQ,fun,F7EA0632,scePeqInit,matching
+scePEQ,fun,FC45514B,scePEQ_FC45514B,
+scePEQ_driver,fun,213DE849,scePeqEntry,matching
+scePEQ_driver,fun,ED13C3B5,scePeqProc,matching
+scePEQ_driver,fun,F7EA0632,scePeqInit,matching
+scePEQ_driver,fun,FC45514B,scePEQ_driver_FC45514B,
+syslib,fun,D632ACDB,module_start,matching
+syslib,var,F01D73A7,module_info,matching

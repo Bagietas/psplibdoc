@@ -1,0 +1,14 @@
+sceHtmlViewerHelper,fun,232F5D22,sceHtmlViewerHelper_232F5D22,
+sceHtmlViewerHelper,fun,5F1A7733,sceHtmlViewerHelper_5F1A7733,
+sceHtmlViewerHelper,fun,C92C71B7,sceHtmlViewerHelper_C92C71B7,
+sceHtmlViewerHelper,fun,E26BCED1,sceHtmlViewerHelper_E26BCED1,
+sceHtmlViewerHelper,fun,F27998C2,sceHtmlViewerHelper_F27998C2,
+sceHtmlViewerHelper,fun,05E0C3D4,sceHtmlViewerHelper_05E0C3D4,
+sceHtmlViewerHelper,fun,47F988E6,sceHtmlViewerHelper_47F988E6,
+sceHtmlViewerHelper,fun,55732F91,sceHtmlViewerHelper_55732F91,
+sceHtmlViewerHelper,fun,63715462,sceHtmlViewerHelper_63715462,
+sceHtmlViewerHelper,fun,B1B946C4,sceHtmlViewerHelper_B1B946C4,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

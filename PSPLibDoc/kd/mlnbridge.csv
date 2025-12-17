@@ -1,0 +1,48 @@
+sceMlnBridge,fun,13E68009,sceMlnBridgeAesEcbEncrypt,matching
+sceMlnBridge,fun,3505ECCE,sceMlnBridgeHMAC,matching
+sceMlnBridge,fun,54EDC552,sceMlnBridgeSHA1,matching
+sceMlnBridge,fun,7770FC23,sceMlnBridgeAesCbcDecrypt,matching
+sceMlnBridge,fun,8D7E61DD,sceMlnBridgeAesEcbDecrypt,matching
+sceMlnBridge,fun,DE730A46,sceMlnBridgeAesCbcEncrypt,matching
+sceMlnBridge,fun,F9357984,sceMlnBridgeSetDKS,matching
+sceMlnBridge,fun,01E7182E,sceMlnBridgeHMAC,previous version (automated)
+sceMlnBridge,fun,0303C580,sceMlnBridge_0303C580,
+sceMlnBridge,fun,09ED826A,sceMlnBridge_09ED826A,
+sceMlnBridge,fun,0AC0713C,sceMlnBridge_0AC0713C,
+sceMlnBridge,fun,109E9125,sceMlnBridge_109E9125,
+sceMlnBridge,fun,10C4FEC6,sceMlnBridgeSha1MakeDigest,matching
+sceMlnBridge,fun,1115D45D,sceMlnBridge_1115D45D,
+sceMlnBridge,fun,119BC1A6,sceMlnBridge_119BC1A6,
+sceMlnBridge,fun,13228DCF,sceMlnBridge_13228DCF,
+sceMlnBridge,fun,2FDF5639,sceMlnBridgeRandInit,matching
+sceMlnBridge,fun,48104A71,sceMlnBridge_48104A71,
+sceMlnBridge,fun,4BC57FE4,sceMlnBridgeAesEcbDecrypt,previous version (automated)
+sceMlnBridge,fun,6E5545D0,sceMlnBridge_6E5545D0,
+sceMlnBridge,fun,7D9DC620,sceMlnBridge_7D9DC620,
+sceMlnBridge,fun,7DA6C709,sceMlnBridgeAesEcbEncrypt,previous version (automated)
+sceMlnBridge,fun,80695890,sceMlnBridge_80695890,
+sceMlnBridge,fun,8AAA3162,sceMlnBridgeAesCbcEncrypt,previous version (automated)
+sceMlnBridge,fun,9AE16B76,sceMlnBridge_9AE16B76,
+sceMlnBridge,fun,A53D0979,sceMlnBridge_A53D0979,
+sceMlnBridge,fun,A5F04A2B,sceMlnBridge_A5F04A2B,
+sceMlnBridge,fun,A6A89086,sceMlnBridge_A6A89086,
+sceMlnBridge,fun,ADB4797E,sceMlnBridgeRsaInit,matching
+sceMlnBridge,fun,B76EF0A3,sceMlnBridgeAesCbcDecrypt,previous version (automated)
+sceMlnBridge,fun,B7E04EFA,sceMlnBridgeRsaFin,matching
+sceMlnBridge,fun,CBF30F27,sceMlnBridgeSHA1,previous version (automated)
+sceMlnBridge,fun,D0790A37,sceMlnBridgeRandFin,matching
+sceMlnBridge,fun,D455DD97,sceMlnBridgeSha256MakeDigest,matching
+sceMlnBridge,fun,E79622CD,sceMlnBridgeRandGetBytes,matching
+sceMlnBridge,fun,FB54F985,sceMlnBridge_FB54F985,
+sceMlnBridge,fun,6DEA83B1,sceMlnBridge_6DEA83B1,
+sceMlnBridge_driver,fun,13E68009,sceMlnBridgeAesEcbEncrypt,matching
+sceMlnBridge_driver,fun,3505ECCE,sceMlnBridgeHMAC,matching
+sceMlnBridge_driver,fun,54EDC552,sceMlnBridgeSHA1,matching
+sceMlnBridge_driver,fun,7770FC23,sceMlnBridgeAesCbcDecrypt,matching
+sceMlnBridge_driver,fun,8D7E61DD,sceMlnBridgeAesEcbDecrypt,matching
+sceMlnBridge_driver,fun,DE730A46,sceMlnBridgeAesCbcEncrypt,matching
+sceMlnBridge_driver,fun,F9357984,sceMlnBridgeSetDKS,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching
