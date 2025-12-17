@@ -1,0 +1,16 @@
+sceChnnlsv,fun,21BE78B4,sceSdCleanList,matching
+sceChnnlsv,fun,850A7FA1,sceSdSetMember,matching
+sceChnnlsv,fun,ABFDFC8B,sceSdCreateList,matching
+sceChnnlsv,fun,C4C494F8,sceSdGetLastIndex,matching
+sceChnnlsv,fun,E7833020,sceSdSetIndex,matching
+sceChnnlsv,fun,F21A1FCA,sceSdRemoveValue,matching
+sceChnnlsv_driver,fun,21BE78B4,sceSdCleanList,matching
+sceChnnlsv_driver,fun,850A7FA1,sceSdSetMember,matching
+sceChnnlsv_driver,fun,ABFDFC8B,sceSdCreateList,matching
+sceChnnlsv_driver,fun,C4C494F8,sceSdGetLastIndex,matching
+sceChnnlsv_driver,fun,E7833020,sceSdSetIndex,matching
+sceChnnlsv_driver,fun,F21A1FCA,sceSdRemoveValue,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

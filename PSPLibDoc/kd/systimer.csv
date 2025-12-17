@@ -1,0 +1,13 @@
+SysTimerForKernel,fun,228EDAE4,sceSTimerGetCount,matching
+SysTimerForKernel,fun,4A01F9D3,sceSTimerStopCount,matching
+SysTimerForKernel,fun,53231A15,sceSTimerSetTMCY,matching
+SysTimerForKernel,fun,54BB5DB4,sceSTimerResetCount,matching
+SysTimerForKernel,fun,975D8E84,sceSTimerSetHandler,matching
+SysTimerForKernel,fun,A95143E2,sceSTimerStartCount,matching
+SysTimerForKernel,fun,B53534B4,sceSTimerSetPrscl,matching
+SysTimerForKernel,fun,C105CF38,sceSTimerFree,matching
+SysTimerForKernel,fun,C99073E3,sceSTimerAlloc,matching
+syslib,fun,D3744BE0,module_bootstart,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

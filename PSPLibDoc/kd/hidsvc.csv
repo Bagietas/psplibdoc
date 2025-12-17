@@ -1,0 +1,8 @@
+sceHIDSvc_driver,fun,D2D6799C,sceHIDSvc_driver_D2D6799C,
+sceHIDSvc_driver,fun,D8AFECC8,sceHIDSvc_driver_D8AFECC8,
+sceHIDSvc_driver,fun,EAE7CD08,sceHIDSvc_driver_EAE7CD08,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

@@ -1,0 +1,15 @@
+sceI2c_driver,fun,17B0DA59,sceI2cReset,matching
+sceI2c_driver,fun,20ADF12A,sceI2cInit,matching
+sceI2c_driver,fun,21A8282C,sceI2cSuspend,matching
+sceI2c_driver,fun,4809D85F,sceI2cEnd,matching
+sceI2c_driver,fun,6536B1B6,sceI2cMasterTransmitReceive,matching
+sceI2c_driver,fun,B952BA65,sceI2cResume,matching
+sceI2c_driver,fun,D6E9836A,sceI2cSetClock,matching
+sceI2c_driver,fun,DB6C4F9B,sceI2cSetDebugHandlers,matching
+sceI2c_driver,fun,E9463B99,sceI2cMasterTransmit,matching
+sceI2c_driver,fun,F87D1ED6,sceI2cMasterReceive,matching
+sceI2c_driver,fun,0397408B,sceI2cSetPollingMode,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

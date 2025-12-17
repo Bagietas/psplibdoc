@@ -1,0 +1,8 @@
+sceUsbPS3Pad,fun,2CDAFDA5,sceUsbPS3Pad_2CDAFDA5,
+sceUsbPS3Pad,fun,B37B24B6,sceUsbPS3Pad_B37B24B6,
+sceUsbPS3Pad_driver,fun,2CDAFDA5,sceUsbPS3Pad_driver_2CDAFDA5,
+sceUsbPS3Pad_driver,fun,B37B24B6,sceUsbPS3Pad_driver_B37B24B6,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

@@ -1,0 +1,16 @@
+sceMeCore_driver,fun,B30FDA09,sceMeCore_driver_B30FDA09,
+sceMeCore_driver,fun,65F96D2D,sceMeCore_driver_65F96D2D,
+sceMeCore_driver,fun,9F35DA53,sceMeCore_driver_9F35DA53,
+sceMeCore_driver,fun,4CD5B5BF,sceMeCore_driver_4CD5B5BF,
+sceMeCore_driver,fun,9EB2943B,sceMeCore_driver_9EB2943B,
+sceMeCore_driver,var,33F936FF,sceMeCore_driver_33F936FF,
+sceMeCore_driver,var,4F3FB928,sceMeCore_driver_4F3FB928,
+sceMeCore_driver,var,7F30B82F,sceMeCore_driver_7F30B82F,
+sceMeCore_driver,var,1B960AB4,sceMeCore_driver_1B960AB4,
+sceMeCore_driver,var,385A4CC6,sceMeCore_driver_385A4CC6,
+sceMeCore_driver,var,61FF4837,sceMeCore_driver_61FF4837,
+sceMeCore_driver,var,AB354CA1,sceMeCore_driver_AB354CA1,
+syslib,fun,ADF12745,module_reboot_phase,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

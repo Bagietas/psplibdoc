@@ -1,0 +1,10 @@
+sceKermitMsfs_driver,fun,EAD1D2C6,sceKermitMsfs_driver_EAD1D2C6,
+sceKermitMsfs_driver,fun,1A4DC9B7,sceKermitMsfs_driver_1A4DC9B7,
+sceKermitMsfs_driver,var,93B61A29,sceKermitMsfs_driver_93B61A29,
+sceKermitMsfs_driver,var,C1B4213A,sceKermitMsfs_driver_C1B4213A,
+sceKermitMsfs_driver,var,7668D90C,sceKermitMsfs_driver_7668D90C,
+sceKermitMsfs_driver,var,BE954163,sceKermitMsfs_driver_BE954163,
+syslib,fun,D3744BE0,module_bootstart,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

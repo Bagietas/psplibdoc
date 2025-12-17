@@ -4,39 +4,48 @@ Page with the current NID status for each library can be found [here](https://ps
 <br>
  
 ## Usage
+### How to contribute
+Just edit the CSV files in PSPLibDoc/ and submit a pull request.
+
+You can update the CSV files using the psp_libdoc.py script (see below).
+
+If you are motivated enough to rebuild the XML files (which is the common psplibdoc format used by various tools), run the `build_xml_from_csv.sh` script (it takes some time to run). Otherwise the XMLs will be updated later.
+
 ### Prerequisites
-psp_libdoc.py and psp_print_libdoc.py require python3 with lxml module.
+psp_libdoc.py requires python3 with lxml module.
 
-### Common psp_libdoc operations
+### Most useful psp_libdoc operations
  - Loading source files
-    - Load one or more PSPLibDoc XML files
-        - psp_libdoc.py -l input_1.xml input_2.xml input_3.xml...
-
     - Load one or more PSP export files
         - psp_libdoc.py -e input_1.exp input_2.exp input_3.exp...
 
-    - Load one or more PPSSPP source files (HLEFunction arrays)
-        - psp_libdoc.py -p input_1.cpp input_2.cpp input_3.cpp...
+    - Load one or more PSPLibDoc XML files
+        - psp_libdoc.py -l input_1.xml input_2.xml input_3.xml...
 
-    - Combination of multiple different sources
-        - psp_libdoc.py -l input_1.xml input_2.xml... -e input_1.exp input_2.exp... -p ...
-
- - Save a combined PSPLibDoc XML file from all loaded sources
-    - psp_libdoc.py *sources* -c psp_libdoc.xml
-    - save_combined.sh will create a combined PSPLibDoc file for all firmwares and modules
-    - save_per_fw_version.sh will create a combined PSPLibDoc file for all firmware versions, each containing all modules
-
- - Save PRX modules as individual PSPLibDoc XML files from all loaded sources
-    - psp_libdoc.py *sources* -s outputFolder
+    - Load one or more NID CSV files (as are present in the PSPLibDoc/ dir in this repo)
+        - psp_libdoc.py -i input_1.csv input_2.csv input_3.csv...
 
  - Update a PSPLibDoc XML file with known NIDs from all loaded sources
     - psp_libdoc.py *sources* -u psp_libdoc_to_update.xml
-    - update_imports.sh will update the Import files for all firmwares from the combined PSPLibDoc
 
- - Update the PSPLibDoc XML files of all firmwares from PSP export files (*.exp)
-    - Put all export files into an input folder and name them after the prx it should update
-    - Example: ata.exp, sysmem.exp in inputFolder will update ata.xml and sysmem.xml across all firmwares
-    - ./update_from_psp_exports.sh inputFolder
+ - Update a CSV file (as is present in PSPLibDoc/ on this repo) with known NIDs from all loaded sources
+    - psp_libdoc.py *sources* -U psp_libdoc_to_update.csv
+
+### Other operations
+
+ - Load one or more PPSSPP source files (HLEFunction arrays)
+    - psp_libdoc.py -p input_1.cpp input_2.cpp input_3.cpp...
+
+ - Combination of multiple different sources
+    - psp_libdoc.py -l input_1.xml input_2.xml... -e input_1.exp input_2.exp... -p ...
+
+ - Save a combined PSPLibDoc XML file from all loaded sources
+    - psp_libdoc.py *sources* -c psp_libdoc.xml
+    - scripts/save_combined.sh will create a combined PSPLibDoc file for all firmwares and modules
+    - scripts/save_per_fw_version.sh will create a combined PSPLibDoc file for all firmware versions, each containing all modules
+
+ - Save PRX modules as individual PSPLibDoc XML files from all loaded sources
+    - psp_libdoc.py *sources* -s outputFolder
 
  - Export all unknown NIDs from all loaded sources
     - psp_libdoc.py *sources* -o unknown_nids.txt
@@ -45,42 +54,22 @@ psp_libdoc.py and psp_print_libdoc.py require python3 with lxml module.
     - psp_libdoc.py *sources* -k known_function_names.txt
 <br>
 
-### Common psp_print_libdoc operations
- - Print all exports of a given PRX module
-    - psp_print_libdoc.py -d *directory* -e *module*
-    - Example: psp_print_libdoc.py -d PSPLibDoc/1.50/ -e sysmem
+### Obfuscated NIDs
 
- - Print all imports of a given PRX module
-    - psp_print_libdoc.py -d *directory* -i *module*
-    - Example: psp_print_libdoc.py -d PSPLibDoc/1.50/ -i threadman
+In later firmware versions, most NIDs for kernel functions were "randomized" (most probably by adding an unknown string at the end of the names before being hashed), meaning for one function you can have different NIDs for 1.50, 3.30, 6.60 etc. and only the first one can be confirmed from the name. However, using heuristics, we can try to match the newer functions with the former non-obfuscated names.
+- detect_obfuscations.py detects if and when NIDs were obfuscated for each module and generates obfuscations.csv. It uses the heuristic that if >20% of the former version disappeared and >20% of the newer version just appeared, then it means they must have been obfuscated.
+- match-nids.py uses the assembly output (using prxtool) to find closer matches between functions before and after obfuscation (or re-obfuscation). It generates obfuscation_pairs.csv.
 
- - Print all PRX modules exporting a given library
-    - psp_print_libdoc.py -d *directory* -l *library*
-    - Example: psp_print_libdoc.py -d PSPLibDoc/1.50/ -l SysMemForKernel
+Note some minor edits have been made manually to obfuscations.csv and obfuscation_pairs.csv to fix some mistakes, and there might remain a lot (mostly newer NIDs matched with the incorrect functions).
 
- - Print all PRX modules importing a given library
-    - psp_print_libdoc.py -d *directory* -m *library*
-    - Example: psp_print_libdoc.py -d PSPLibDoc/1.50/ -m LoadCoreForKernel
 <br>
 
 ### Misc tools
- - Check NIDs which have a name attributed to them in an xml but not another one
-   - check_missing_known_nids.py
+ - Check if NIDs are marked "matching" if and only if they actually match
+   - ./verify-sources.py
 
  - Generate a page containing the statistics of known and unknown NIDs
-   - make_statistics.py
-
- - Try matching NIDs before and after obfuscation using prxtool to find the closest functions
-   - match-nids.py input.xml module_ver1.prx module_ver2.prx module_ver3.prx ...
-   - Note that this will override previously already defined names
-
- - Check if the "SOURCE" field of a NID is correct
-   - ./update_source.py
-   - Authorized values are "matching" (NID matches the name), "previous version" (name taken from a previous version), "previous version (automated)" (same but with automated function matching) and "unknown"
-
-## General Notes
- - psp_libdoc currently does not load or save variables (Updating a PSPLibDoc however preserves variables)
- - Updating a PSPLibDoc is based on NID only, a loaded entry with the same NID will overwrite the previous one
+   - ./build_stats_pages.py
 <br>
 
 ## Firmware Notes

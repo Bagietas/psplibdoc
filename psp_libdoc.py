@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
 import argparse
+import csv
 import hashlib
 import itertools
 import os
@@ -10,7 +11,7 @@ import sys
 from collections import namedtuple
 from lxml import etree as ET
 
-NIDEntry = namedtuple('NIDEntry', ['nidtype', 'nid', 'name', 'prx', 'prxName', 'libraryName', 'libraryFlags', 'versions', 'source'])
+NIDEntry = namedtuple('NIDEntry', ['nidtype', 'nid', 'name', 'prx', 'prxName', 'libraryName', 'libraryFlags', 'versions'])
 
 def compute_nid(name):
 	return hashlib.sha1(name.encode('ascii')).digest()[:4][::-1].hex().upper()
@@ -30,20 +31,16 @@ def loadPSPLibdoc(xmlFile):
 				functionNID = function.find("NID").text.upper().removeprefix('0X')
 				functionName = function.find("NAME").text
 				versions = [x.text for x in function.findall("VERSIONS/VERSION")]
-				source_elem = function.find("SOURCE")
-				source = '' if source_elem is None else ('' if source_elem.text is None else source_elem.text)
 				entries.append(NIDEntry(nidtype='fun', nid=functionNID, name=functionName, prx=prxFile,
 										prxName=prxName, libraryName=libraryName, libraryFlags=libraryFlags,
-										versions=versions, source=source))
+										versions=versions))
 			for variable in library.findall("VARIABLES/VARIABLE"):
 				variableNID = variable.find("NID").text.upper().removeprefix('0X')
 				variableName = variable.find("NAME").text
 				versions = [x.text for x in variable.findall("VERSIONS/VERSION")]
-				source_elem = variable.find("SOURCE")
-				source = '' if source_elem is None else ('' if source_elem.text is None else source_elem.text)
 				entries.append(NIDEntry(nidtype='var', nid=variableNID, name=variableName, prx=prxFile,
 										prxName=prxName, libraryName=libraryName, libraryFlags=libraryFlags,
-										versions=versions, source=source))
+										versions=versions))
 
 	return entries
 
@@ -92,12 +89,6 @@ def updatePSPLibdoc(nidEntries, xmlFile, version=None):
 						for v in newver:
 							ET.SubElement(versions, "VERSION").text = v
 
-					if len(nidEntry.source) > 0:
-						if funvar.find("SOURCE") is not None:
-							funvar.find("SOURCE").text = nidEntry.source
-						else:
-							ET.SubElement(funvar, "SOURCE").text = nidEntry.source
-
 		for nid in entries:
 			if entries[nid].prx == prxFile and entries[nid].libraryName not in libraryList:
 				libs = prx.find("LIBRARIES")
@@ -136,6 +127,32 @@ def updatePSPLibdoc(nidEntries, xmlFile, version=None):
 
 	tree.write(xmlFile, encoding='utf-8', method="xml", xml_declaration=True, pretty_print=True)
 
+def updateCSVFile(nidEntries, csvFile):
+	entries = {}
+	for entry in nidEntries:
+		entries[entry.nid] = entry
+
+	with open(csvFile, 'r') as csvfd:
+		reader = csv.reader(csvfd)
+		curEntries = [row for row in reader]
+		outEntries = []
+		for entry in curEntries:
+			lib = entry[0]
+			nid = entry[2]
+			source = entry[4]
+			if nid in entries and entries[nid].libraryName == lib:
+				if compute_nid(entries[nid].name) == nid:
+					if entry[3] != entries[nid].name:
+						print("update NID", nid, entry[3], '=>', entries[nid].name)
+						entry[3] = entries[nid].name
+				else:
+					print("skip", nid, entries[nid].name)
+			outEntries.append(entry)
+	with open(csvFile, 'w') as csvfd:
+		writer = csv.writer(csvfd)
+		for entry in outEntries:
+			writer.writerow(entry)
+
 def getNidForString(string):
 	sha1Hash = hashlib.sha1(bytes(string, 'utf-8'))
 	hashBytes = sha1Hash.digest()[0:4]
@@ -165,14 +182,14 @@ def loadPSPExportFile(exportFile):
 			functionNID = functionNID.strip().upper().removeprefix('0X')
 			entries.append(NIDEntry(nidtype="fun", nid=functionNID, name=functionName, prx=" ",
 									prxName=" ", libraryName=libraryName, libraryFlags=libraryFlags,
-									versions=[], source=""))
+									versions=[]))
 
 		elif line.startswith("PSP_EXPORT_FUNC_HASH"):
 			functionName = line[line.find("(") + 1 : line.find(")")].strip()
 			functionNID = getNidForString(functionName)
 			entries.append(NIDEntry(nidtype="fun", nid=functionNID, name=functionName, prx=" ",
 									prxName=" ", libraryName=libraryName, libraryFlags=libraryFlags,
-									versions=[], source=""))
+									versions=[]))
 
 		elif line.startswith("PSP_EXPORT_END"):
 			libraryName = " "
@@ -191,7 +208,7 @@ def loadFunctionFile(xmlFile):
 		functionNID = function.find("NID").text.upper().removeprefix('0X')
 		functionName =function.find("NAME").text
 		entries.append(NIDEntry(nidtype="fun", nid=functionNID, name=functionName, prx=" ",
-								prxName=" ", libraryName=" ", libraryFlags=" ", versions=[], source=""))
+								prxName=" ", libraryName=" ", libraryFlags=" ", versions=[]))
 
 	return entries
 
@@ -217,8 +234,17 @@ def loadHLEFunctionFile(inputFile):
 			functionNID = hleEntry[0].upper().removeprefix('0X')
 			functionName = hleEntry[2].strip()[1:-1]
 			entries.append(NIDEntry(nidtype="fun", nid=functionNID, name=functionName, prx=" ",
-								prxName=" ", libraryName=libraryName, libraryFlags=" ", versions=[], source=""))
+								prxName=" ", libraryName=libraryName, libraryFlags=" ", versions=[]))
 
+	return entries
+
+def loadCSVFile(csvFile):
+	reader = csv.reader(open(csvFile, 'r'))
+	entries = []
+	for row in reader:
+		entry = NIDEntry(nidtype=row[1], nid=row[2], name=row[3], prx=" ",
+						 prxName=" ", libraryName=row[0], libraryFlags=" ", versions=[])
+		entries.append(entry)
 	return entries
 
 def exportNids(nidEntries, outFile):
@@ -297,11 +323,8 @@ def exportPSPLibdocCombined(nidEntries, outFile, firmwareVersion=None, includeAl
 		name = ET.SubElement(function, "NAME")
 		name.text = entry.name
 
-		# Do not export the "VERSIONS" and "SOURCE" fields in the combined libdoc, in order to save space
+		# Do not export the "VERSIONS" field in the combined libdoc, in order to save space
 		if includeAll:
-			if len(entry.source) > 0:
-				ET.SubElement(function, "SOURCE").text = entry.source
-
 			versions = ET.SubElement(function, "VERSIONS")
 			for v in entry.versions:
 				ET.SubElement(versions, "VERSION").text = v
@@ -318,6 +341,11 @@ def exportPSPLibdocModules(nidEntries, outFolder):
 	for key in prxDict.keys():
 		outfile = outFolder + "/" + key.split('.')[0] + ".xml"
 		exportPSPLibdocCombined(prxDict[key], outfile)
+
+def exportCSV(nidEntries):
+	writer = csv.writer(sys.stdout)
+	for entry in nidEntries:
+		writer.writerow([entry.libraryName, entry.nidtype, entry.nid, entry.name])
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
@@ -346,10 +374,21 @@ if __name__ == '__main__':
 						type=str,
 						help='Load ppsspp source file (HLEFunction arrays)')
 
+	parser.add_argument('-i', '--inputCsv',
+						required=False,
+						nargs='+',
+						type=str,
+						help='Load NID CSV files')
+
 	parser.add_argument('-u', '--updateLibdoc',
 						required=False,
 						type=str,
 						help='Update specified PSP-Libdoc XML file with loaded NID names.')
+
+	parser.add_argument('-U', '--updateCsv',
+						required=False,
+						type=str,
+						help='Update specified CSV file with loaded NID names.')
 
 	parser.add_argument('-n', '--exportNids',
 						required=False,
@@ -386,6 +425,11 @@ if __name__ == '__main__':
 						type=str,
 						help='Extract only the NIDs from a given firmware version')
 
+	parser.add_argument('-C', '--csv',
+						required=False,
+						action='store_true',
+						help='Export to CSV to stdout')
+
 	nidEntries = []
 	args = parser.parse_args(sys.argv[1:])
 
@@ -409,8 +453,16 @@ if __name__ == '__main__':
 			ppssppEntries = loadHLEFunctionFile(ppsspp)
 			nidEntries.extend(ppssppEntries)
 
+	if(args.inputCsv):
+		for csvFile in args.inputCsv:
+			csvEntries = loadCSVFile(csvFile)
+			nidEntries.extend(csvEntries)
+
 	if(args.updateLibdoc):
 		updatePSPLibdoc(nidEntries, args.updateLibdoc, args.firmwareVersion)
+
+	if(args.updateCsv):
+		updateCSVFile(nidEntries, args.updateCsv)
 
 	if(args.exportNids):
 		exportNids(nidEntries, args.exportNids)
@@ -430,7 +482,6 @@ if __name__ == '__main__':
 	if(args.writeLibdocSplit):
 		exportPSPLibdocModules(nidEntries, args.writeLibdocSplit)
 
-
-
-
+	if(args.csv):
+		exportCSV(nidEntries)
 

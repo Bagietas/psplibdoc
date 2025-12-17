@@ -1,0 +1,10 @@
+sceParseUri,fun,062BB07E,sceUriUnescape,matching
+sceParseUri,fun,49E950EC,sceUriEscape,matching
+sceParseUri,fun,568518C9,sceUriParse,matching
+sceParseUri,fun,7EE318AF,sceUriBuild,matching
+sceParseUri,fun,8885A782,sceUriSweepPath,matching
+sceParseUri,fun,8AA55D17,sceUriMerge,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

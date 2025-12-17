@@ -38,12 +38,14 @@ def get_raw_functions(binary_path):
     return funs
 
 # Match the functions of two module (versions) by repeatedly finding the closest pairs
-def match_module_pair(path1, path2):
+def match_module_pair(func_old, func_new, path1, path2):
     # Find the functions of both modules, ignoring unexported functions
     funs1 = {k: v for k, v in get_raw_functions(path1).items() if not (k.startswith('sub_') or k.startswith('loc_') or k.startswith('module_'))}
+    funs1 = {k: funs1[k] for k in funs1.keys() if k in func_old}
     funs2 = {k: v for k, v in get_raw_functions(path2).items() if not (k.startswith('sub_') or k.startswith('loc_') or k.startswith('module_'))}
+    funs2 = {k: funs2[k] for k in funs2.keys() if k in func_new}
     distances = defaultdict(dict)
-    print('computing distances...')
+    #print('computing distances...')
     for (f1, c1) in funs1.items():
         lib1 = f1[:-8]
         for (f2, c2) in funs2.items():
@@ -52,7 +54,7 @@ def match_module_pair(path1, path2):
                 continue
             distances[f1][f2] = Levenshtein.distance(c1, c2)
 
-    print('associating functions...')
+    #print('associating functions...')
     result = {}
     while len(funs1) > 0 and len(funs2) > 0:
         closest_pair = None
@@ -77,62 +79,25 @@ def match_module_pair(path1, path2):
     # Return a dictionary of (name of function in path1) -> (name of function in path2)
     return result
 
-# Match pairs of NIDs for a sequence of versions of modules
-def match_modules(paths):
-    results = []
-    for (path1, path2) in zip(paths, paths[1:]):
-        print("check", path1, path2)
-        results.append(match_module_pair(path1, path2))
-        print(results[-1])
-
-    checked = set()
-    nid_matches = {}
-    for j in range(len(results)):
-        for k in results[j]:
-            if k not in checked:
-                firstk = k
-                for i in range(j, len(results)):
-                    checked.add(k)
-                    print(k, '->', end=' ')
-                    if k not in results[i]:
-                        break
-                    k = results[i][k]
-                    checked.add(k)
-                    nid_matches[k] = firstk
-                print(k)
-    return nid_matches
-
-# Return the "real" name associated to an unobfuscated name (LibraryName_12345678), if it exists in the psplibdoc
-def check_entry(entries, funname):
-    lib = '_'.join(funname.split('_')[:-1])
-    nid = funname.split('_')[-1]
-    for e in entries:
-        if e.nid == nid and e.libraryName == lib:
-            if not e.name.endswith(e.nid):
-                return e.name
-            else:
-                return None
-    assert(False)
-
-# Include automated deductions in a given libdoc file
-def fix_psplibdoc(libdoc, modules):
+def list_matches(ver1, ver2, mod1, mod2):
     # nid_matches contains a (obfuscated NID) -> (unobfuscated NID) mapping
-    nid_matches = match_modules(modules)
-
-    entries = psp_libdoc.loadPSPLibdoc(libdoc)
-    out_entries = []
-    for e in entries:
-        funname = e.libraryName + '_' + e.nid
-        if e.name.endswith(e.nid) and funname in nid_matches:
-            # Check if the unobfuscated NID does have an associated name
-            prev_name = check_entry(entries, nid_matches[funname])
-            if prev_name is not None:
-                print(funname, '->', prev_name)
-                e = e._replace(name = prev_name, source = "previous version (automated)")
-        out_entries.append(e)
-
-    psp_libdoc.updatePSPLibdoc(out_entries, libdoc)
+    func_old = []
+    func_new = []
+    for line in open('obfuscations.csv', 'r').read().split('\n')[:-1]:
+        lib = line.split(',')[1]
+        old = line.split(',')[2]
+        new = line.split(',')[3]
+        typ = line.split(',')[4]
+        nid = line.split(',')[5]
+        if old == ver1 and new == ver2:
+            if typ == 'OLD':
+                func_old.append(lib + '_' + nid)
+            elif typ == 'NEW':
+                func_new.append(lib + '_' + nid)
+    nid_matches = match_module_pair(func_old, func_new, mod1, mod2)
+    for nid in nid_matches:
+        print(nid + ',' + nid_matches[nid])
 
 if __name__ == '__main__':
-    fix_psplibdoc(sys.argv[1], sys.argv[2:])
+    list_matches(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
 

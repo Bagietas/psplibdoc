@@ -1,0 +1,5 @@
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,D3744BE0,module_bootstart,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

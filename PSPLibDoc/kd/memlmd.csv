@@ -1,0 +1,16 @@
+memlmd,fun,185F0A2A,sceUtilsGetLoadModuleABLengthByPolling,matching
+memlmd,fun,8BDB1A3E,sceUtilsGetLoadModuleABLength,matching
+memlmd,fun,C3A6F784,sceUtilsPrepareGetLoadModuleABLength,matching
+memlmd,fun,DF76975E,sceUtilsPrepareGetLoadModuleABLengthByPolling,matching
+memlmd,fun,1570BAB4,memlmd_1570BAB4,
+memlmd,fun,3E76F7E7,memlmd_3E76F7E7,
+memlmd,fun,436FC37A,memlmd_436FC37A,
+memlmd,fun,D0071311,memlmd_D0071311,
+semaphore,fun,00EEC06A,sceUtilsBufferCopy,matching
+semaphore,fun,4C537C72,sceUtilsBufferCopyWithRange,matching
+semaphore,fun,77E97079,sceUtilsBufferCopyByPollingWithRange,matching
+semaphore,fun,8EEB7BF2,sceUtilsBufferCopyByPolling,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

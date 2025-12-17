@@ -1,0 +1,7 @@
+sceNetApDialogDummy,fun,3811281E,sceNetApDialogDummyConnect,matching
+sceNetApDialogDummy,fun,BB73FF67,sceNetApDialogDummyInit,matching
+sceNetApDialogDummy,fun,CA9BE5BF,sceNetApDialogDummyGetState,matching
+sceNetApDialogDummy,fun,F213BE65,sceNetApDialogDummyTerm,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching

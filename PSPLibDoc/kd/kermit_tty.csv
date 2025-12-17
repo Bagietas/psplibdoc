@@ -1,0 +1,5 @@
+sceKermitTTY_driver,fun,33E1D00F,sceKermitTTY_driver_33E1D00F,
+syslib,fun,D3744BE0,module_bootstart,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

@@ -1,0 +1,12 @@
+sceKermit_driver,fun,2CB23ED7,sceKermit_driver_2CB23ED7,
+sceKermit_driver,fun,351B5CC4,sceKermit_driver_351B5CC4,
+sceKermit_driver,fun,4F75AA05,sceKermit_driver_4F75AA05,
+sceKermit_driver,fun,6985A4D9,sceKermit_driver_6985A4D9,
+sceKermit_driver,fun,858F0C6D,sceKermit_driver_858F0C6D,
+sceKermit_driver,fun,9160841C,sceKermit_driver_9160841C,
+sceKermit_driver,fun,9EDB1390,sceKermit_driver_9EDB1390,
+sceKermit_driver,fun,DF0CA60E,sceKermit_driver_DF0CA60E,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

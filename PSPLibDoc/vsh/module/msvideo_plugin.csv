@@ -1,0 +1,9 @@
+sceMsVideo,fun,D8E92754,sceMsVideo_D8E92754,
+sceMsVideoPluginHeap,fun,66257E0F,sceMsVideoPluginHeap_66257E0F,
+sceMsVideoPluginHeap,fun,7687EFB6,sceMsVideoPluginHeap_7687EFB6,
+sceMsVideoPluginHeap,fun,9E4661ED,sceMsVideoPluginHeap_9E4661ED,
+sceMsVideoPluginHeap,fun,BE14DF7C,sceMsVideoPluginHeap_BE14DF7C,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

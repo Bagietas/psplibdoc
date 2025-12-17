@@ -1,0 +1,11 @@
+sceUsbstorBoot,fun,1F080078,sceUsbstorBootRegisterNotify,matching
+sceUsbstorBoot,fun,594BBF95,sceUsbstorBootSetLoadAddr,matching
+sceUsbstorBoot,fun,6D865ECD,sceUsbstorBootGetDataSize,matching
+sceUsbstorBoot,fun,A1119F0D,sceUsbstorBootSetStatus,matching
+sceUsbstorBoot,fun,A55C9E16,sceUsbstorBootUnregisterNotify,matching
+sceUsbstorBoot,fun,E58818A8,sceUsbstorBootSetCapacity,matching
+sceUsbstorBoot,fun,8A4F36E5,sceUsbstorBootGetDownloadSize,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

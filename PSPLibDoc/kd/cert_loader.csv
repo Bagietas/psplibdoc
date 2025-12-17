@@ -1,0 +1,3 @@
+sceCertLoader,fun,DD629A24,sceLoadCertFromFlash,matching
+sceCertLoader_driver,fun,11391041,sceLoadCertInit,matching
+sceCertLoader_driver,fun,E86A7DC1,sceLoadCertEnd,matching

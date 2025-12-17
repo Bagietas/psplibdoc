@@ -1,0 +1,8 @@
+sceDNAS_lib,fun,0D560144,sceDNASInit,matching
+sceDNAS_lib,fun,45C1AAF5,sceDNASGetEventFlag,matching
+sceDNAS_lib,fun,6929100C,sceDNASGetProductCode,matching
+sceDNAS_lib,fun,9FF48DD3,sceDNASStop,matching
+sceDNAS_lib,fun,A646E771,sceDNASGetState,matching
+sceDNAS_lib,fun,BE0998D7,sceDNASTerm,matching
+sceDNAS_lib,fun,CA8B8909,sceDNASNetStart,matching
+sceDNAS_lib,fun,F3787AD8,sceDNASInternalStart,matching

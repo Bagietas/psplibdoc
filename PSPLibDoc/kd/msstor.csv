@@ -1,0 +1,15 @@
+sceMScm_driver,fun,0128147B,sceMScmWriteMSReg,matching
+sceMScm_driver,fun,0A054CDA,sceMScmHCLastStatus,matching
+sceMScm_driver,fun,21183216,sceMScmWriteDataPIO,matching
+sceMScm_driver,fun,2AD0A649,sceMScmGetSlotState,matching
+sceMScm_driver,fun,2D7C40FA,sceMScmWaitHCIntr,matching
+sceMScm_driver,fun,907D7766,sceMScmSendTPC,matching
+sceMScm_driver,fun,BE455B5D,sceMScmReadDataPIO,matching
+sceMScm_driver,fun,F82AF926,sceMScmTPCSetCmd,matching
+sceMScm_driver,fun,FF6C50D8,sceMScmTPCGetInt,matching
+sceMSstor_driver,fun,6FC1E8AE,sceMSstorEntry,matching
+sceMSstor_driver,fun,714782D6,sceMSstorRegisterCLDMSelf,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,2F064FA6,module_reboot_before,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

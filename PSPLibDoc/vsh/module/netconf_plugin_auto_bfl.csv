@@ -1,0 +1,10 @@
+sceVshNetconfAoss,fun,2AEE9D4D,sceNetAOSSGetState,matching
+sceVshNetconfAoss,fun,47A55B8E,sceVshNetconfAoss_47A55B8E,
+sceVshNetconfAoss,fun,50DF536D,sceNetAOSSInit,matching
+sceVshNetconfAoss,fun,653D453F,sceNetAOSSStart,matching
+sceVshNetconfAoss,fun,AC307152,sceNetAOSSStop,matching
+sceVshNetconfAoss,fun,D253B522,sceNetAOSSTerm,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

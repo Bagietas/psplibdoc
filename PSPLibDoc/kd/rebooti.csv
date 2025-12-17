@@ -1,0 +1,3 @@
+RebootForKernel,fun,72E280A8,sceKernelReboot,matching
+syslib,fun,D3744BE0,module_bootstart,matching
+syslib,var,F01D73A7,module_info,matching

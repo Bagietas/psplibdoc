@@ -1,0 +1,12 @@
+sceAmctrl_driver,fun,0785C974,sceDrmBBCipherUpdate,matching
+sceAmctrl_driver,fun,1CCB66D2,sceDrmBBCipherInit,matching
+sceAmctrl_driver,fun,525B8218,sceDrmBBMacInit,matching
+sceAmctrl_driver,fun,58163FBE,sceDrmBBMacUpdate,matching
+sceAmctrl_driver,fun,9951C50F,sceDrmBBCipherFinal,matching
+sceAmctrl_driver,fun,EF95A213,sceDrmBBMacFinal,matching
+sceAmctrl_driver,fun,F5186D8E,sceDrmBBMacFinal2,matching
+sceAmctrl_driver,fun,9227EA79,sceAmctrl_driver_9227EA79,
+sceAmctrl_driver,fun,E04ADD4C,sceAmctrl_driver_E04ADD4C,
+syslib,fun,D632ACDB,module_start,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

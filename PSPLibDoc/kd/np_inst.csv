@@ -1,0 +1,12 @@
+sceNpInstall_driver,fun,0B039B36,sceNpInstallActivation,matching
+sceNpInstall_driver,fun,5847D8C7,sceNpInstallGetChallenge,matching
+sceNpInstall_driver,fun,7AE4C8BC,sceNpInstallDeactivation,matching
+sceNpInstall_driver,fun,91F9D50D,sceNpInstallCheckActivation,matching
+sceNpInstall_user,fun,0B039B36,sceNpInstallActivation,matching
+sceNpInstall_user,fun,5847D8C7,sceNpInstallGetChallenge,matching
+sceNpInstall_user,fun,7AE4C8BC,sceNpInstallDeactivation,matching
+sceNpInstall_user,fun,91F9D50D,sceNpInstallCheckActivation,matching
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

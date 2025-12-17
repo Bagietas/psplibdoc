@@ -1,0 +1,6 @@
+mlnusb,fun,3A5DE42E,mlnusb_3A5DE42E,
+mlnusb,fun,AED41C3F,mlnusb_AED41C3F,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching
+syslib,var,11B97506,module_sdk_version,matching

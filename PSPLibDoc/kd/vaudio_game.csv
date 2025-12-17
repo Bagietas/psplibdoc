@@ -1,0 +1,15 @@
+sceVaudio,fun,03B6807D,sceVaudioChReserve,matching
+sceVaudio,fun,346FBE94,sceVaudioSetEffectType,matching
+sceVaudio,fun,67585DFD,sceVaudioChRelease,matching
+sceVaudio,fun,8986295E,sceVaudioOutputBlocking,matching
+sceVaudio_driver,fun,03B6807D,sceVaudioChReserve,matching
+sceVaudio_driver,fun,346FBE94,sceVaudioSetEffectType,matching
+sceVaudio_driver,fun,5A7435B7,sceVaudioInit,matching
+sceVaudio_driver,fun,67585DFD,sceVaudioChRelease,matching
+sceVaudio_driver,fun,72749E84,sceVaudioEnd,matching
+sceVaudio_driver,fun,82EF2F9D,sceVaudioGetEffectString,matching
+sceVaudio_driver,fun,8986295E,sceVaudioOutputBlocking,matching
+sceVaudio_driver,fun,DCC18F25,sceVaudio_driver_DCC18F25,
+syslib,fun,D632ACDB,module_start,matching
+syslib,fun,CEE8593C,module_stop,matching
+syslib,var,F01D73A7,module_info,matching

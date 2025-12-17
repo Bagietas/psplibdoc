@@ -1,0 +1,6 @@
+sceAudioc2,fun,21D5A83F,sceAudiocodec2Decode,matching
+sceAudioc2,fun,AA2ED267,sceAudiocodec2CheckNeedMem,matching
+sceAudioc2,fun,E063D402,sceAudiocodec2Init,matching
+sceAudiocodec2,fun,21D5A83F,sceAudiocodec2Decode,matching
+sceAudiocodec2,fun,AA2ED267,sceAudiocodec2CheckNeedMem,matching
+sceAudiocodec2,fun,E063D402,sceAudiocodec2Init,matching
