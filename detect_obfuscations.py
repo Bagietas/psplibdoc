@@ -48,7 +48,7 @@ def handle_library(module, lib, nids, versions):
 
 def main():
     # Parse all the NID export files
-    filelist = glob.glob('PSPLibDoc/kd/*.xml') + glob.glob('PSPLibDoc/vsh/module/*.xml')
+    filelist = glob.glob('generated-xml/ByModule/kd/*.xml') + glob.glob('generated-xml/ByModule/vsh/module/*.xml')
 
     nid_bylib = defaultdict(lambda: defaultdict(list))
     versions = set()
@@ -61,7 +61,7 @@ def main():
                 versions.add(v)
             if len(cur_ver) == 0:
                 continue
-            nid_bylib[e.prx][e.libraryName].append({"nid": e.nid, "name": e.name, "versions": cur_ver, "source": e.source})
+            nid_bylib[e.prx][e.libraryName].append({"nid": e.nid, "name": e.name, "versions": cur_ver})
 
     versions = list(sorted(versions))
 

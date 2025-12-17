@@ -6,7 +6,7 @@ FW_VERSIONS=("1.00" "1.03" "1.50" "1.51" "1.52" "2.00" "2.01" "2.50" "2.60" "2.7
 PRX_FILES=()
 for PRX_FOLDER in ${PRX_FOLDERS[@]}
 do
-    PRX_PATH="./PSPLibDoc/${PRX_FOLDER}/"
+    PRX_PATH="./generated-xml/ByModule/${PRX_FOLDER}/"
     if [ -d "${PRX_PATH}" ]; then
         mapfile -t -O "${#PRX_FILES[@]}" PRX_FILES < <(ls -1 "${PRX_PATH}"*.xml)
     fi
@@ -15,6 +15,6 @@ done
 for fw in ${FW_VERSIONS[@]}; do
     COMBINED_LIBDOC_FILE="PSPLibDoc-$fw.xml"
     echo "Saving combined PSP-Libdoc file ${COMBINED_LIBDOC_FILE}"
-    ./psp_libdoc.py -l ${PRX_FILES[@]} -v $fw -c "./PSPLibDoc-computed/ByVersion/${COMBINED_LIBDOC_FILE}"
+    ./psp_libdoc.py -l ${PRX_FILES[@]} -v $fw -c "./generated-xml/ByVersion/${COMBINED_LIBDOC_FILE}"
 done
 
