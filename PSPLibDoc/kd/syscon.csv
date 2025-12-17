@@ -14,6 +14,7 @@ sceSyscon_driver,fun,1B17D3E3,sceSysconGetTachyonAvcPowerCtrl,matching
 sceSyscon_driver,fun,1B60C8AD,sceSysconWlanOff,matching
 sceSyscon_driver,fun,284FE366,sceSysconBatteryGetLimitTime,matching
 sceSyscon_driver,fun,2B9E6A06,sceSysconGetPowerError,matching
+sceSyscon_driver,fun,2EE82492,sceSysconCtrlTachyonWDT,matching
 sceSyscon_driver,fun,32CFD20F,sceSysconIsLowBattery,matching
 sceSyscon_driver,fun,34C36FF9,sceSysconGetDigitalKey,matching
 sceSyscon_driver,fun,36E28C5F,sceSysconBatteryAuth,matching

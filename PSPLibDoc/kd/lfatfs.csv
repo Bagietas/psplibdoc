@@ -1,9 +1,9 @@
 sceLFatFs_driver,fun,8F0560E0,sceLfatfsStop,matching
 sceLFatFs_driver,fun,933F6E29,sceLfatfsWaitReady,matching
 sceLFatFs_driver,fun,51C7F7AE,sceLFatFs_driver_51C7F7AE,
-sceLFatFs_driver,fun,F1FBA85F,sceLfatfsStop,previous version (automated)
 sceLFatFs_driver,fun,460D3436,sceLFatFs_driver_460D3436,
 sceLFatFs_driver,var,B580616D,sceLFatFs_driver_B580616D,
+sceLFatFs_driver,fun,F1FBA85F,sceLFatFs_driver_F1FBA85F,
 syslib,fun,D632ACDB,module_start,matching
 syslib,fun,CEE8593C,module_stop,matching
 syslib,fun,2F064FA6,module_reboot_before,matching

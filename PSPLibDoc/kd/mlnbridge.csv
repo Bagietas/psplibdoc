@@ -5,7 +5,7 @@ sceMlnBridge,fun,7770FC23,sceMlnBridgeAesCbcDecrypt,matching
 sceMlnBridge,fun,8D7E61DD,sceMlnBridgeAesEcbDecrypt,matching
 sceMlnBridge,fun,DE730A46,sceMlnBridgeAesCbcEncrypt,matching
 sceMlnBridge,fun,F9357984,sceMlnBridgeSetDKS,matching
-sceMlnBridge,fun,01E7182E,sceMlnBridgeHMAC,previous version (automated)
+sceMlnBridge,fun,01E7182E,sceMlnBridge_01E7182E,
 sceMlnBridge,fun,0303C580,sceMlnBridge_0303C580,
 sceMlnBridge,fun,09ED826A,sceMlnBridge_09ED826A,
 sceMlnBridge,fun,0AC0713C,sceMlnBridge_0AC0713C,
@@ -16,20 +16,20 @@ sceMlnBridge,fun,119BC1A6,sceMlnBridge_119BC1A6,
 sceMlnBridge,fun,13228DCF,sceMlnBridge_13228DCF,
 sceMlnBridge,fun,2FDF5639,sceMlnBridgeRandInit,matching
 sceMlnBridge,fun,48104A71,sceMlnBridge_48104A71,
-sceMlnBridge,fun,4BC57FE4,sceMlnBridgeAesEcbDecrypt,previous version (automated)
+sceMlnBridge,fun,4BC57FE4,sceMlnBridge_4BC57FE4,
 sceMlnBridge,fun,6E5545D0,sceMlnBridge_6E5545D0,
 sceMlnBridge,fun,7D9DC620,sceMlnBridge_7D9DC620,
-sceMlnBridge,fun,7DA6C709,sceMlnBridgeAesEcbEncrypt,previous version (automated)
+sceMlnBridge,fun,7DA6C709,sceMlnBridge_7DA6C709,
 sceMlnBridge,fun,80695890,sceMlnBridge_80695890,
-sceMlnBridge,fun,8AAA3162,sceMlnBridgeAesCbcEncrypt,previous version (automated)
+sceMlnBridge,fun,8AAA3162,sceMlnBridge_8AAA3162,
 sceMlnBridge,fun,9AE16B76,sceMlnBridge_9AE16B76,
 sceMlnBridge,fun,A53D0979,sceMlnBridge_A53D0979,
 sceMlnBridge,fun,A5F04A2B,sceMlnBridge_A5F04A2B,
 sceMlnBridge,fun,A6A89086,sceMlnBridge_A6A89086,
 sceMlnBridge,fun,ADB4797E,sceMlnBridgeRsaInit,matching
-sceMlnBridge,fun,B76EF0A3,sceMlnBridgeAesCbcDecrypt,previous version (automated)
+sceMlnBridge,fun,B76EF0A3,sceMlnBridge_B76EF0A3,
 sceMlnBridge,fun,B7E04EFA,sceMlnBridgeRsaFin,matching
-sceMlnBridge,fun,CBF30F27,sceMlnBridgeSHA1,previous version (automated)
+sceMlnBridge,fun,CBF30F27,sceMlnBridge_CBF30F27,
 sceMlnBridge,fun,D0790A37,sceMlnBridgeRandFin,matching
 sceMlnBridge,fun,D455DD97,sceMlnBridgeSha256MakeDigest,matching
 sceMlnBridge,fun,E79622CD,sceMlnBridgeRandGetBytes,matching

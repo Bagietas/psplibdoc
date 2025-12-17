@@ -82,7 +82,7 @@ scePopsMan,fun,F03F1227,scePopsManInit,matching
 scePopsMan,fun,FC56480E,scePopsManDocRead,matching
 scePopsMan,fun,632F80A0,scePopsMan_632F80A0,
 scePopsMan,fun,4F7628CC,scePopsManGetEdramSize,matching
-scePopsMan,fun,F1D672CE,scePopsManDocOpen,previous version (automated)
+scePopsMan,fun,F1D672CE,scePopsMan_F1D672CE,
 scePopsMan_driver,fun,04B14718,scePopsManEnd,matching
 scePopsMan_driver,fun,8666B52F,scePopsManSuspend,matching
 scePopsMan_driver,fun,92E9E38D,scePopsMan_driver_92E9E38D,

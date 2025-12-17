@@ -83,7 +83,7 @@ ModuleMgrForUser,fun,D8B73127,sceKernelGetModuleIdByAddress,matching
 ModuleMgrForUser,fun,F0A26395,sceKernelGetModuleId,matching
 ModuleMgrForUser,fun,D2FBC957,sceKernelGetModuleGPByAddress,matching
 ModuleMgrForUser,fun,1196472E,sceKernelLoadModuleBufferMs,unknown
-ModuleMgrForUser,fun,8F2DF740,sceKernelStopUnloadSelfModule,previous version
+ModuleMgrForUser,fun,8F2DF740,ModuleMgrForUser_8F2DF740,
 ModuleMgrForUser,fun,FEF27DC1,sceKernelLoadModuleDNAS,unknown
 ModuleMgrForUser,fun,24EC0641,sceKernelLoadModuleBufferApp,unknown
 ModuleMgrForUser,fun,E4C4211C,sceKernelLoadModuleWithBlockOffset,unknown

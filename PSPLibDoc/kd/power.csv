@@ -55,7 +55,7 @@ scePower,fun,BAFA3DF0,scePowerGetCallbackMode,matching
 scePower,fun,A4E93389,scePowerSetClockFrequency280,unknown
 scePower,fun,545A7F3C,scePowerSetClockFrequency300,unknown
 scePower,fun,CB49F5CE,scePowerGetBatteryChargeCycle,matching
-scePower,fun,EBD177D6,scePowerSetClockFrequency280,previous version (automated)
+scePower,fun,EBD177D6,scePowerSetClockFrequency350,unknown
 scePower_driver,fun,0074EF9B,scePowerGetResumeCount,matching
 scePower_driver,fun,04B7766E,scePowerRegisterCallback,matching
 scePower_driver,fun,0AFD0D8B,scePowerIsBatteryExist,matching
@@ -143,7 +143,7 @@ scePower_driver,fun,90285886,scePowerBatteryDisableUsbCharging,matching
 scePower_driver,fun,A4E93389,scePowerSetClockFrequency280,unknown
 scePower_driver,fun,545A7F3C,scePowerSetClockFrequency300,unknown
 scePower_driver,fun,CB49F5CE,scePowerGetBatteryChargeCycle,matching
-scePower_driver,fun,EBD177D6,scePowerSetClockFrequency280,previous version (automated)
+scePower_driver,fun,EBD177D6,scePowerSetClockFrequency350,unknown
 scePower_driver,fun,F06B96D4,scePower_driver_F06B96D4,
 syslib,fun,D632ACDB,module_start,matching
 syslib,fun,2F064FA6,module_reboot_before,matching

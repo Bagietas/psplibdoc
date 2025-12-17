@@ -58,10 +58,10 @@ sceUtility,fun,F64910F0,sceUtilityUnloadUsbModule,matching
 sceUtility,fun,F7D8D092,sceUtilityUnloadAvModule,matching
 sceUtility,fun,2A2B3DE0,sceUtilityLoadModule,matching
 sceUtility,fun,E49BFE92,sceUtilityUnloadModule,matching
-sceUtility,fun,28D35634,sceUtilityGetNetParamLatestID,previous version (automated)
-sceUtility,fun,70267ADF,sceUtilityGetNetParamLatestID,previous version (automated)
-sceUtility,fun,ECE1D3E5,sceUtilityGetNetParamLatestID,previous version (automated)
-sceUtility,fun,EF3582B2,sceUtilityGetNetParamLatestID,previous version (automated)
+sceUtility,fun,28D35634,sceUtility_28D35634,
+sceUtility,fun,70267ADF,sceUtility_70267ADF,
+sceUtility,fun,ECE1D3E5,sceUtility_ECE1D3E5,
+sceUtility,fun,EF3582B2,sceUtility_EF3582B2,
 sceUtility,fun,0251B134,sceUtilityScreenshotInitStart,matching
 sceUtility,fun,16D02AF0,sceUtilityNpSigninInitStart,matching
 sceUtility,fun,86ABDB1B,sceUtilityNpSigninGetStatus,matching

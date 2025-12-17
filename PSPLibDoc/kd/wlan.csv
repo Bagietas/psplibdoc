@@ -14,7 +14,7 @@ sceWlanDrv_driver,fun,5E7C8D94,sceWlanDevIsGameMode,matching
 sceWlanDrv_driver,fun,5ED4049A,sceWlanGPPrevEstablishActive,matching
 sceWlanDrv_driver,fun,6D89822C,sceWlanDevInit,matching
 sceWlanDrv_driver,fun,7FF54BD2,sceWlanDevSetGPIO,matching
-sceWlanDrv_driver,fun,81579D36,sceWlanGPPrevEstablishActive,previous version (automated)
+sceWlanDrv_driver,fun,81579D36,sceWlanDrv_driver_81579D36,
 sceWlanDrv_driver,fun,93440B11,sceWlanDevIsPowerOn,matching
 sceWlanDrv_driver,fun,9658C9F7,sceWlanGPRegisterCallback,matching
 sceWlanDrv_driver,fun,A447103A,sceWlanGPRecv,matching
@@ -24,7 +24,7 @@ sceWlanDrv_driver,fun,EC9232F0,sceWlanDevEnd,matching
 sceWlanDrv_driver,fun,FE8A0B46,sceWlanSetWakeUp,matching
 sceWlanDrv_driver,fun,8D5F551B,sceWlanDrv_driver_8D5F551B,
 sceWlanDrv_driver,fun,44A99F9D,sceWlanGetDropRate,matching
-sceWlanDrv_driver,fun,6D5C839E,sceWlanGPSend,previous version (automated)
+sceWlanDrv_driver,fun,6D5C839E,sceWlanDrv_driver_6D5C839E,
 sceWlanDrv_driver,fun,EB3235B5,sceWlanSetDropRate,matching
 sceWlanDrv_driver,fun,FBD385FB,sceWlanDropCheck,matching
 sceWlanDrv_driver,fun,749B813A,sceWlanSetHostDiscover,matching
@@ -42,7 +42,7 @@ sceWlanDrv_lib,fun,5BAA1FE5,sceWlanDrv_lib_5BAA1FE5,
 sceWlanDrv_lib,fun,5E7C8D94,sceWlanDevIsGameMode,matching
 sceWlanDrv_lib,fun,5ED4049A,sceWlanGPPrevEstablishActive,matching
 sceWlanDrv_lib,fun,7FF54BD2,sceWlanDevSetGPIO,matching
-sceWlanDrv_lib,fun,81579D36,sceWlanGPPrevEstablishActive,previous version (automated)
+sceWlanDrv_lib,fun,81579D36,sceWlanDrv_lib_81579D36,
 sceWlanDrv_lib,fun,9658C9F7,sceWlanGPRegisterCallback,matching
 sceWlanDrv_lib,fun,A447103A,sceWlanGPRecv,matching
 sceWlanDrv_lib,fun,B4D7CB74,sceWlanGPSend,matching
@@ -50,18 +50,18 @@ sceWlanDrv_lib,fun,C9A8CAB7,sceWlanDevDetach,matching
 sceWlanDrv_lib,fun,FE8A0B46,sceWlanSetWakeUp,matching
 sceWlanDrv_lib,fun,8D5F551B,sceWlanDrv_lib_8D5F551B,
 sceWlanDrv_lib,fun,44A99F9D,sceWlanGetDropRate,matching
-sceWlanDrv_lib,fun,6D5C839E,sceWlanGPSend,previous version (automated)
+sceWlanDrv_lib,fun,6D5C839E,sceWlanDrv_lib_6D5C839E,
 sceWlanDrv_lib,fun,EB3235B5,sceWlanSetDropRate,matching
 sceWlanDrv_lib,fun,FBD385FB,sceWlanDropCheck,matching
 sceWlanDrv_lib,fun,749B813A,sceWlanSetHostDiscover,matching
 sceWlanDrv_lib,fun,9B74EC2F,sceWlanDrv_lib_9B74EC2F,
-sceWlanDrv_lib,fun,F0E897B9,sceWlanDropCheck,previous version (automated)
-sceWlanDrv_lib,fun,61DFA72D,sceWlanDropCheck,previous version (automated)
+sceWlanDrv_lib,fun,F0E897B9,sceWlanDrv_lib_F0E897B9,
+sceWlanDrv_lib,fun,61DFA72D,sceWlanDrv_lib_61DFA72D,
 sceWlanDrv_lib,fun,826AC42A,sceWlanDrv_lib_826AC42A,
 sceWlanDrv_lib,fun,41C4C119,sceWlanDrv_lib_41C4C119,
-sceWlanDrv_lib,fun,87DC6D45,sceWlanDropCheck,previous version (automated)
+sceWlanDrv_lib,fun,87DC6D45,sceWlanDrv_lib_87DC6D45,
 sceWlanDrv_lib,fun,1AE1B369,sceWlanDrv_lib_1AE1B369,
-sceWlanDrv_lib,fun,4ADEA1CF,sceWlanDropCheck,previous version (automated)
+sceWlanDrv_lib,fun,4ADEA1CF,sceWlanDrv_lib_4ADEA1CF,
 syslib,fun,CEE8593C,module_stop,matching
 syslib,fun,D632ACDB,module_start,matching
 syslib,fun,2F064FA6,module_reboot_before,matching

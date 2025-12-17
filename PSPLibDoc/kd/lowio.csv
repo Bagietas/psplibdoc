@@ -78,6 +78,7 @@ sceGpio_driver,fun,310F0CCF,sceGpioPortSet,matching
 sceGpio_driver,fun,317D9D2C,sceGpioSetPortMode,matching
 sceGpio_driver,fun,31F34AE6,sceGpioQueryIntr,matching
 sceGpio_driver,fun,37C8DADC,sceGpioSetIntrMode,matching
+sceGpio_driver,fun,4250D44A,sceGpioPortRead,matching
 sceGpio_driver,fun,4A992B24,sceGpioEnd,matching
 sceGpio_driver,fun,5691CEFA,sceGpioEnableTimerCapture,matching
 sceGpio_driver,fun,64CD4536,sceGpioResume,matching

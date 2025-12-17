@@ -282,7 +282,7 @@ UtilsForKernel,fun,DBBE9A46,sceKernelL1DcacheProbeRange,matching
 UtilsForKernel,fun,F0155BCA,sceKernelL1IcacheProbe,matching
 UtilsForKernel,fun,0939D45C,sceKernelL2cacheWritebackAll,matching
 UtilsForKernel,fun,2F80288E,sceKernelL2cacheProbeRange,matching
-UtilsForKernel,fun,39FFB756,sceKernelIcacheInvalidateRange,previous version (automated)
+UtilsForKernel,fun,39FFB756,UtilsForKernel_39FFB756,
 UtilsForKernel,fun,485E430A,sceKernelL2cacheWritebackInvalidateAll,matching
 UtilsForKernel,fun,601E43E6,sceKernelL2cacheWritebackRange,matching
 UtilsForKernel,fun,7C5DC253,sceKernelL2cacheWritebackInvalidateRange,matching

@@ -11,6 +11,7 @@ sceDmacplus_driver,var,9D3DDDF0,sceDmacplus_driver_9D3DDDF0,
 sceGpio_driver,fun,103C3EB2,sceGpioPortClear,matching
 sceGpio_driver,fun,310F0CCF,sceGpioPortSet,matching
 sceGpio_driver,fun,317D9D2C,sceGpioSetPortMode,matching
+sceGpio_driver,fun,4250D44A,sceGpioPortRead,matching
 sceGpio_driver,fun,95D7F3B8,sceGpioDisableIntr,matching
 sceKermitMemory_driver,fun,80E1240A,sceKermitMemory_driver_80E1240A,
 sceKermitMemory_driver,fun,90B662D0,sceKermitMemory_driver_90B662D0,

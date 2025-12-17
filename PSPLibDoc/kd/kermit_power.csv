@@ -16,7 +16,7 @@ scePower,fun,2B7C7CF4,scePowerRequestStandby,matching
 scePower,fun,34F9C463,scePowerGetPllClockFrequencyInt,matching
 scePower,fun,3951AF53,scePowerWaitRequestCompletion,matching
 scePower,fun,442BFBAC,scePowerGetBacklightMaximum,matching
-scePower,fun,469989AD,scePowerSetClockFrequency,previous version
+scePower,fun,469989AD,scePower_469989AD,
 scePower,fun,478FE6F5,scePowerGetBusClockFrequency,matching
 scePower,fun,483CE86B,scePowerGetBatteryVolt,matching
 scePower,fun,545A7F3C,scePowerSetClockFrequency300,unknown
