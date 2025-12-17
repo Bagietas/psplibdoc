@@ -192,7 +192,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xBA09142A</NID>
-              <NAME>sceAta_driver_BA09142A</NAME>
+              <NAME>sceAtaCheckXferReadyIE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xBDD30DEE</NID>
@@ -200,7 +200,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC7B02795</NID>
-              <NAME>sceAta_driver_C7B02795</NAME>
+              <NAME>sceAtaCheckPacketCmdCompleteIE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x12805193</NID>

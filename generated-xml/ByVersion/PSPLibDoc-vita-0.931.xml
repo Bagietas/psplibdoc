@@ -5059,7 +5059,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x1D4042A5</NID>
-              <NAME>syslib_1D4042A5</NAME>
+              <NAME>module_text_checksum</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -9196,7 +9196,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x6C6887EE</NID>
-              <NAME>sceKernelLzrcDecode</NAME>
+              <NAME>sceKernelLzrc4Decode</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x004D4DEE</NID>

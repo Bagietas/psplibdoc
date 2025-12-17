@@ -10,5 +10,5 @@ syslib,fun,2F064FA6,module_reboot_before,matching
 syslib,fun,ADF12745,module_reboot_phase,matching
 syslib,var,F01D73A7,module_info,matching
 syslib,var,11B97506,module_sdk_version,matching
-syslib,var,1D4042A5,blabla,matching
+syslib,var,1D4042A5,module_text_checksum,matching
 syslib,var,0F7C276C,module_start_thread_parameter,matching

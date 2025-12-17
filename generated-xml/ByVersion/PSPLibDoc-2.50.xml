@@ -192,7 +192,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xBA09142A</NID>
-              <NAME>sceAta_driver_BA09142A</NAME>
+              <NAME>sceAtaCheckXferReadyIE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xBDD30DEE</NID>
@@ -200,7 +200,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC7B02795</NID>
-              <NAME>sceAta_driver_C7B02795</NAME>
+              <NAME>sceAtaCheckPacketCmdCompleteIE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x12805193</NID>
@@ -228,11 +228,11 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xEFE3C7FA</NID>
-              <NAME>sceAta_driver_EFE3C7FA</NAME>
+              <NAME>sceAtaAccessDataPortTS</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xFC7B031E</NID>
-              <NAME>sceAta_driver_FC7B031E</NAME>
+              <NAME>sceAtaExecPacketCmdTS</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -6998,7 +6998,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x64AA4ED6</NID>
-              <NAME>sceSsl_lib_64AA4ED6</NAME>
+              <NAME>CRYPTO_set_add_lock_cb</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x665D02F6</NID>
@@ -7010,7 +7010,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x69105335</NID>
-              <NAME>sceSsl_lib_69105335</NAME>
+              <NAME>CRYPTO_get_add_lock_cb</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x69F1B678</NID>
@@ -7022,7 +7022,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x6BA650E4</NID>
-              <NAME>sceSsl_lib_6BA650E4</NAME>
+              <NAME>CRYPTO_get_locking_cb</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x6CDEB823</NID>
@@ -7202,7 +7202,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xA9191C17</NID>
-              <NAME>sceSsl_lib_A9191C17</NAME>
+              <NAME>CRYPTO_set_locking_cb</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xA920B39E</NID>

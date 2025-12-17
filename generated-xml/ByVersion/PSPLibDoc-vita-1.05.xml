@@ -9752,7 +9752,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x6C6887EE</NID>
-              <NAME>sceKernelLzrcDecode</NAME>
+              <NAME>sceKernelLzrc4Decode</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x004D4DEE</NID>

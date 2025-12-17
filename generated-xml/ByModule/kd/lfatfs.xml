@@ -826,7 +826,7 @@
             </VARIABLE>
             <VARIABLE>
               <NID>0x1D4042A5</NID>
-              <NAME>syslib_1D4042A5</NAME>
+              <NAME>module_text_checksum</NAME>
               <VERSIONS>
                 <VERSION>5.05</VERSION>
                 <VERSION>5.50</VERSION>
