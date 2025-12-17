@@ -1,4 +1,4 @@
-name: Build pages
+name: Build preview pages
 on:
   pull_request:
 

@@ -204,8 +204,6 @@ def make_stats(module, lib, version, cur_nids, nid_names, obfuscation_pairs):
                     print("cycle detected with", fullname)
                     exit(1)
             oldest_nid = oldername.split('_')[-1]
-            if oldername != fullname:
-                print(fullname, "->", oldername, "->", oldest_nid)
             if oldername in nid_names:
                 if nid_names[oldername][1] == 'matching':
                     obf_ok_nids.append({"nid": oldest_nid, "name": fullname, "source": "obf_matching"})
@@ -257,7 +255,7 @@ def main():
     os.makedirs(OUTPUT_HTML + "/modules", exist_ok=True)
 
     # Parse all the NID export files
-    filelist = glob.glob('PSPLibDoc/kd/*.xml') + glob.glob('PSPLibDoc/vsh/module/*.xml')
+    filelist = glob.glob('generated-xml/ByModule/kd/*.xml') + glob.glob('generated-xml/ByModule/vsh/module/*.xml')
 
     nid_bylib = defaultdict(lambda: defaultdict(list))
     versions = set()
