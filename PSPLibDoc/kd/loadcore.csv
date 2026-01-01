@@ -40,10 +40,10 @@ LoadCoreForKernel,fun,5248A98F,sceKernelLoadModuleBootLoadCore,matching
 LoadCoreForKernel,fun,A6D40F56,sceKernelGetModuleGPByAddressForKernel,matching
 LoadCoreForKernel,fun,A8E2D53D,sceKernelMaskLibraryEntries,matching
 LoadCoreForKernel,fun,C0913394,sceKernelLinkLibraryEntriesWithModule,matching
-LoadCoreForKernel,fun,4440853B,LoadCoreForKernel_4440853B,
-LoadCoreForKernel,fun,FA3101A4,LoadCoreForKernel_FA3101A4,
-LoadCoreForKernel,fun,CDCAA8B2,LoadCoreForKernel_CDCAA8B2,
-LoadCoreForKernel,fun,EC20C661,LoadCoreForKernel_EC20C661,
+LoadCoreForKernel,fun,4440853B,sceKernelLoadCoreLock,
+LoadCoreForKernel,fun,FA3101A4,sceKernelLoadCoreUnlock,
+LoadCoreForKernel,fun,CDCAA8B2,sceKernelSegmentChecksum,
+LoadCoreForKernel,fun,EC20C661,sceKernelLoadRebootBin,
 sceLoadCoreForUser,fun,DA1B09AA,sceKernelUnLinkLibraryEntries,matching
 syslib,fun,D3744BE0,module_bootstart,matching
 syslib,var,F01D73A7,module_info,matching
