@@ -13,12 +13,12 @@ OUTPUT_HTML = "./github-pages"
 # List of colors & descriptions for each "category" of NID
 HTML_STATUS = [
     # for both obfuscated and non-obfuscated
-    ("known", "green", "matching the name hash"),
+    ("guess", "yellow", "guessed"),
     # for non-obfuscated
+    ("known", "green", "matching the name hash"),
     ("unknown", "orange", "unknown"),
-    ("wrong", "red", "not matching the name hash"),
     # for obfuscated
-    ("obf_ok", "yellow", "obfuscated but matching a previously known name"),
+    ("obf_ok", "yellow", "obfuscated but matching a previously known or guessed name"),
     ("obf_unk", "orange", "unknown but non-obfuscated in a previous version"),
     ("obf_new", "grey", "present only as obfuscated")
 ]
@@ -74,19 +74,16 @@ def html_library(module, lib, stats_byver, versions):
             if status == "total" or status == "is_obf":
                 continue
             for cur_nid in stats_byver[ver][status]:
-                status_bynid[cur_nid["nid"]] = status
+                if cur_nid["nid"] not in status_bynid:
+                    status_bynid[cur_nid["nid"]] = status
     cnt = Counter(status_bynid.values())
-    both_stats = []
-    nonobf_ok = cnt["known"]
-    nonobf_total = nonobf_ok + cnt["wrong"] + cnt["unknown_nonobf"] + cnt["unknown"]
-    obf_ok = cnt["nok_from_previous"] + cnt["nok_dubious"]
-    obf_total = obf_ok + cnt["unknown_obf"]
-    if nonobf_total != 0:
-        both_stats.append("%.1f%% (%d/%d)" % (nonobf_ok / nonobf_total * 100, nonobf_ok, nonobf_total))
-    if obf_total != 0:
-        both_stats.append("%.1f%% (%d/%d)" % (obf_ok / obf_total * 100, obf_ok, obf_total))
-    agg_stats = " / ".join(both_stats)
-    output += f"""<td style="white-space: nowrap;">{agg_stats}</td>"""
+    ok = cnt["known"] + cnt["guess"]
+    nok = cnt["unknown"] + cnt["obf_new"]
+    total = ok + nok
+    if total == 0:
+        total = cnt["obf_unk"]
+    stat = "%.1f%% (%d/%d)" % (ok / total * 100, ok, total)
+    output += f"""<td style="white-space: nowrap;">{stat}</td>"""
 
     # Make a column for each firmware version
     for ver in versions:
@@ -177,22 +174,25 @@ Hover a cell to know the meaning of the color. <br />
 # Build the statistics for a given library at a given version.
 def make_stats(module, lib, version, cur_nids, nid_names, obfuscation_pairs):
     unk_nids = []
-    nok_nids = []
     ok_nids = []
     obf_ok_nids = []
     obf_unk_nids = []
     obf_new_nids = []
+    guess_nids = []
     is_obf = False
-    # Sort NIDs by category: unknown (name ends with the NID), ok (NID matches the hash) and nok (NID doesn't match the hash)
     for cur_nid in cur_nids:
         fullname = lib + '_' + cur_nid
-        # TODO: handle guesses
+        # If name is in the CSV, sort NIDs by category: ok (NID matches the hash), unknown (uses default name, ends with the NID) and guesses (the rest)
         if fullname in nid_names:
+            nid_obj = {"nid": cur_nid, "name": nid_names[fullname][0], "source": nid_names[fullname][1]}
             if nid_names[fullname][1] == 'matching':
-                ok_nids.append({"nid": cur_nid, "name": nid_names[fullname][0], "source": nid_names[fullname][1]})
+                ok_nids.append(nid_obj)
+            elif nid_names[fullname][0].endswith(cur_nid):
+                unk_nids.append(nid_obj)
             else:
-                unk_nids.append({"nid": cur_nid, "name": nid_names[fullname][0], "source": nid_names[fullname][1]})
+                guess_nids.append(nid_obj)
         else:
+            # Otherwise, name is obfuscated, sort by category: obf_matching (matches a previous function) or obf_new (new function)
             is_obf = True
             oldername = fullname
             cycle_detect = [oldername]
@@ -205,14 +205,14 @@ def make_stats(module, lib, version, cur_nids, nid_names, obfuscation_pairs):
                     exit(1)
             oldest_nid = oldername.split('_')[-1]
             if oldername in nid_names:
-                if nid_names[oldername][1] == 'matching':
+                if not nid_names[oldername][0].endswith(oldername.split('_')[-1]): # check if name ends with NID (ie default name, no guess or match)
                     obf_ok_nids.append({"nid": oldest_nid, "name": fullname, "source": "obf_matching"})
                 else:
                     obf_unk_nids.append({"nid": oldest_nid, "name": fullname, "source": "obf_unknown"})
             else:
                 obf_new_nids.append({"nid": oldest_nid, "name": fullname, "source": "obf_new"})
 
-    stats = {"known": ok_nids, "unknown": unk_nids, "wrong": nok_nids, "obf_ok": obf_ok_nids, "obf_unk": obf_unk_nids, "obf_new": obf_new_nids}
+    stats = {"known": ok_nids, "unknown": unk_nids, "guess": guess_nids, "obf_ok": obf_ok_nids, "obf_unk": obf_unk_nids, "obf_new": obf_new_nids}
 
     stats['total'] = len(cur_nids)
     stats['is_obf'] = is_obf

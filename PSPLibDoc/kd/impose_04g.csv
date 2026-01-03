@@ -2,10 +2,10 @@ sceAudioRouting,fun,28235C56,sceAudioRoutingGetVolumeMode,matching
 sceAudioRouting,fun,36FD8AA9,sceAudioRoutingSetMode,matching
 sceAudioRouting,fun,39240E7D,sceAudioRoutingGetMode,matching
 sceAudioRouting,fun,BB548475,sceAudioRoutingSetVolumeMode,matching
-sceAudioRouting_driver,fun,051E312A,sceAudioRouting_driver_051E312A,
-sceAudioRouting_driver,fun,1A4BE166,sceAudioRouting_driver_1A4BE166,
-sceAudioRouting_driver,fun,40AE4390,sceAudioRouting_driver_40AE4390,
-sceAudioRouting_driver,fun,800B51A0,sceAudioRouting_driver_800B51A0,
+sceAudioRouting_driver,fun,051E312A,sceAudioRoutingSetVolumeMode,name of the userland alias
+sceAudioRouting_driver,fun,1A4BE166,sceAudioRoutingSetMode,name of the userland alias
+sceAudioRouting_driver,fun,40AE4390,sceAudioRoutingGetMode,name of the userland alias
+sceAudioRouting_driver,fun,800B51A0,sceAudioRoutingGetVolumeMode,name of the userland alias
 sceImpose,fun,0F341BE4,sceImposeGetHomePopup,matching
 sceImpose,fun,24FD7BCF,sceImposeGetLanguageMode,matching
 sceImpose,fun,36AA6E91,sceImposeSetLanguageMode,matching

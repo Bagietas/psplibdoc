@@ -6,8 +6,16 @@ Page with the current NID status for each library can be found [here](https://ps
 ## Usage
 ### How to contribute
 Just edit the CSV files in PSPLibDoc/ and submit a pull request.
+There is one CSV file per PRX file (module) and the columns are:
+- library name
+- fun/var (function or variable export)
+- NID
+- name
+- source of the NID: "matching" is reserved for names whose hash actually matches the NID; otherwise it can be any indication where or why that name was guessed.
 
-You can update the CSV files using the psp_libdoc.py script (see below).
+By convention, unknown names will be specified as `<library>_<NID>` (eg `LoadCoreForKernel_4440853B`).
+
+You can also update the CSV files using the psp_libdoc.py script (see below).
 
 If you are motivated enough to rebuild the XML files (which is the common psplibdoc format used by various tools), run the `build_xml_from_csv.sh` script (it takes some time to run). Otherwise the XMLs will be updated later.
 
@@ -88,5 +96,5 @@ A big thanks goes to
  - All original PSPLibDoc contributers
  - All PPSSPP contributers for additional user library symbols
  - All uOFW contributors for updated 6.60 and 6.61 symbols
- - artart78, Draan, efonte, GrapheneCt, sajattack, SilverSpring, zecoxao, Spenon-Dev for additional symbol sources and NIDs
+ - artart78, Draan, efonte, GrapheneCt, sajattack, SilverSpring, zecoxao, Spenon-Dev, GrayJack for additional symbol sources and NIDs
  - Spenon-Dev for the original repo [here](https://github.com/Spenon-dev/PSPLibDoc)
