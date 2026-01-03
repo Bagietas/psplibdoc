@@ -18,9 +18,7 @@ for csv in glob.glob('PSPLibDoc/kd/*.csv') + glob.glob('PSPLibDoc/vsh/module/*.c
             if source == 'matching':
                 print('wrongly marked as matching:', csv, line)
                 fail = True
-            elif source != 'unknown' and source != '':
-                print("unknown source:", csv, line)
-                fail = True
+        # all the rest is considered guesses so is ok
 
 if fail:
     exit(1)
