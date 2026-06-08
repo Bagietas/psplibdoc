@@ -37,7 +37,7 @@ scePaf,fun,15947A70,scePaf_15947A70,
 scePaf,fun,15EF8E18,_ZN3paf8PhXmItemC1EPNS_8PhWidgetEPNS_8PhAppearE,matching
 scePaf,fun,16033F84,scePaf_16033F84,
 scePaf,fun,17308FC9,_Z25PSJS_BuildValueImpl_ArrayRK11PSJSContextiP9PSJSValue,matching
-scePaf,fun,1811AD32,scePaf_1811AD32,
+scePaf,fun,1811AD32,_ZN3paf4View8PageOpenEPvii,matching
 scePaf,fun,1943B875,_ZN3paf8PhXmList11FocusGlobalEf,matching
 scePaf,fun,199896A3,_ZN3paf8PhXmList8CloseOffEiff,matching
 scePaf,fun,19A779E2,_ZN3paf8PhButton8SetFocusEPNS_7PhEventEb,matching
@@ -625,7 +625,7 @@ scePaf,fun,FA05BF7B,scePaf_FA05BF7B,
 scePaf,fun,FA758B05,_ZNK3paf6PhText12GetFirstLineEv,matching
 scePaf,fun,FA78AF39,_ZNK3paf7PhMicon9GetVolumeEv,matching
 scePaf,fun,FA87D725,_ZNK3paf6PhText12GetLineCountEv,matching
-scePaf,fun,FB3A9617,scePaf_FB3A9617,
+scePaf,fun,FB3A9617,_ZN3paf7SurfaceC1EPNS_11SurfacePoolEii9ImageMode10ImageOrderbi,matching
 scePaf,fun,FB3DB2FF,paf_fini,matching
 scePaf,fun,FBA47E77,sce_paf_private_strtol,matching
 scePaf,fun,FBC76D05,sce_png_read,matching
