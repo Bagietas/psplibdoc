@@ -11,7 +11,7 @@ vsh,fun,0F2F6718,_ZN11PageManager4InitEPN3paf4ViewE,matching
 vsh,fun,182745AF,vvvGetVersion,matching
 vsh,fun,1A62E6EA,vsh_1A62E6EA,
 vsh,fun,2695A5B8,vsh_2695A5B8,
-vsh,fun,34DA1B67,vsh_34DA1B67,
+vsh,fun,34DA1B67,_ZN3vsh10FixedAlloc8InstanceEv,matching
 vsh,fun,3E00F3B4,vsh_3E00F3B4,
 vsh,fun,4A619A1D,vsh_4A619A1D,
 vsh,fun,5452A47B,_ZN11PageManagerC2Ei,matching
@@ -24,7 +24,7 @@ vsh,fun,78A67F41,vsh_78A67F41,
 vsh,fun,7ADF6A69,_ZN11PageManager5ClearEv,matching
 vsh,fun,7DA81064,vsh_7DA81064,
 vsh,fun,80FB409B,vsh_80FB409B,
-vsh,fun,81BBD0D1,vsh_81BBD0D1,
+vsh,fun,81BBD0D1,_ZN3vsh10FixedAlloc4LockEPKc,matching
 vsh,fun,A3C7DF11,vsh_A3C7DF11,
 vsh,fun,AA8B9556,_ZN3vsh15RaiseFatalErrorEj,matching
 vsh,fun,B55C095C,vsh_B55C095C,

@@ -6385,7 +6385,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x34DA1B67</NID>
-              <NAME>vsh_34DA1B67</NAME>
+              <NAME>_ZN3vsh10FixedAlloc8InstanceEv</NAME>
               <VERSIONS>
                 <VERSION>1.00</VERSION>
                 <VERSION>1.03</VERSION>
@@ -6728,7 +6728,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x81BBD0D1</NID>
-              <NAME>vsh_81BBD0D1</NAME>
+              <NAME>_ZN3vsh10FixedAlloc4LockEPKc</NAME>
               <VERSIONS>
                 <VERSION>1.00</VERSION>
                 <VERSION>1.03</VERSION>
